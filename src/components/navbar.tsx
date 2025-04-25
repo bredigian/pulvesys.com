@@ -5,16 +5,16 @@ export default function Navbar() {
     <nav className="flex items-center justify-evenly p-8">
       <img src={logo} className="size-12 rounded-md" />
       <ul className="flex items-center gap-4 text-sm font-normal">
-        <li>
+        <li className="opacity-50 hover:opacity-100">
           <a href="#">Inicio</a>
         </li>
-        <li>
+        <li className="opacity-50 hover:opacity-100">
           <a href="#">Características</a>
         </li>
-        <li>
+        <li className="opacity-50 hover:opacity-100">
           <a href="#">Planes</a>
         </li>
-        <li>
+        <li className="opacity-50 hover:opacity-100">
           <a href="#">Nosotros</a>
         </li>
       </ul>

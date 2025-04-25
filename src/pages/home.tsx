@@ -1,3 +1,4 @@
+import ArrowIcon from "../components/icons/arrow-icon";
 import DocumentIcon from "../components/icons/document-icon";
 import Navbar from "../components/navbar";
 import PhoneIcon from "../components/icons/phone-icon";
@@ -18,8 +19,12 @@ export default function Home() {
           <p className="max-w-sm text-center text-lg font-medium opacity-50">
             Un sistema web dedicado a la gestión de órdenes de pulverización.
           </p>
+          <button className="mt-12 flex w-2xs cursor-pointer items-center justify-center gap-2 rounded-md bg-gray-300 p-2 font-medium text-black opacity-50 hover:opacity-100">
+            Explorar
+            <ArrowIcon size={24} to="DOWN" />
+          </button>
         </section>
-        <ul className="flex items-center justify-center gap-4 p-8">
+        <ul className="flex items-center justify-center gap-8 p-8">
           <li className="flex cursor-help flex-col items-center gap-1 opacity-50 hover:opacity-100">
             <span className="text-2xl leading-[1] line-through">$0</span>
             <p className="text-sm">30 días gratis</p>
