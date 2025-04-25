@@ -14,7 +14,7 @@ export default function SignupIcon({ size }: Props) {
       strokeWidth="2"
       strokeLinecap="round"
       strokeLinejoin="round"
-      className="lucide lucide-log-in-icon lucide-log-in"
+      className="lucide lucide-log-in-icon lucide-log-in shrink-0"
     >
       <path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4" />
       <polyline points="10 17 15 12 10 7" />

@@ -2,7 +2,7 @@ interface Props {
   size: number;
 }
 
-export default function PhoneIcon({ size }: Props) {
+export default function DotIcon({ size }: Props) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -11,13 +11,12 @@ export default function PhoneIcon({ size }: Props) {
       viewBox="0 0 24 24"
       fill="none"
       stroke="currentColor"
-      strokeWidth="2.5"
+      strokeWidth="2"
       strokeLinecap="round"
       strokeLinejoin="round"
-      className="lucide lucide-smartphone-icon lucide-smartphone shrink-0"
+      className="lucide lucide-dot-icon lucide-dot shrink-0"
     >
-      <rect width="14" height="20" x="5" y="2" rx="2" ry="2" />
-      <path d="M12 18h.01" />
+      <circle cx="12.1" cy="12.1" r="1" />
     </svg>
   );
 }

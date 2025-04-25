@@ -17,7 +17,7 @@ import { useDotButton } from "../hooks/use-dots";
 import useEmblaCarousel from "embla-carousel-react";
 
 export default function FeaturesContainer() {
-  const [emblaRef, emblaApi] = useEmblaCarousel({}, [Autoplay()]);
+  const [emblaRef, emblaApi] = useEmblaCarousel({ loop: false }, [Autoplay()]);
 
   const onNavButtonClick = useCallback((emblaApi: EmblaCarouselType) => {
     const autoplay = emblaApi?.plugins()?.autoplay;
@@ -38,7 +38,7 @@ export default function FeaturesContainer() {
 
   return (
     <section
-      id="second-section"
+      id="features"
       className="embla relative flex flex-col overflow-hidden"
       ref={emblaRef}
     >
@@ -49,12 +49,12 @@ export default function FeaturesContainer() {
               ¿Que se puede hacer?
             </h2>
             <h4 className="text-6xl font-bold">Pulverizaciones</h4>
-            <p className="max-w-lg text-xl text-gray-300">
+            <p className="max-w-lg text-xl font-extralight">
               Creá tus órdenes indicando{" "}
-              <strong className="text-white">campo</strong>,{" "}
-              <strong className="text-white">cultivo</strong>,{" "}
-              <strong className="text-white">tratamiento</strong> y{" "}
-              <strong className="text-white">productos</strong> a utilizar junto
+              <strong className="font-bold">campo</strong>,{" "}
+              <strong className="font-bold">cultivo</strong>,{" "}
+              <strong className="font-bold">tratamiento</strong> y{" "}
+              <strong className="font-bold">productos</strong> a utilizar junto
               con sus respectivas dósis.
             </p>
           </div>
@@ -91,13 +91,13 @@ export default function FeaturesContainer() {
         <div className="embla__slide flex min-h-dvh min-w-0 flex-[0_0_100%] flex-row items-center justify-evenly gap-12 p-12">
           <div className="flex flex-col gap-2">
             <h4 className="text-6xl font-bold">Productos</h4>
-            <p className="max-w-lg text-xl text-gray-300">
-              <strong className="text-white">Agregá</strong>,{" "}
-              <strong className="text-white">modificá</strong> y{" "}
-              <strong className="text-white">eliminá</strong> los productos que
+            <p className="max-w-lg text-xl font-extralight">
+              <strong className="font-bold">Agregá</strong>,{" "}
+              <strong className="font-bold">modificá</strong> y{" "}
+              <strong className="font-bold">eliminá</strong> los productos que
               uses habitualmente, indicando su{" "}
-              <strong className="text-white">nombre</strong> y{" "}
-              <strong className="text-white">unidad</strong> para un mejor
+              <strong className="font-bold">nombre</strong> y{" "}
+              <strong className="font-bold">unidad</strong> para un mejor
               control.
             </p>
           </div>
@@ -128,11 +128,11 @@ export default function FeaturesContainer() {
               Cultivos
               <br />& Tratamientos
             </h4>
-            <p className="max-w-lg text-xl text-gray-300">
+            <p className="max-w-lg text-xl font-extralight">
               Administrá los diferentes tipos de{" "}
-              <strong className="text-white">tratamientos</strong> que se
-              aplican a los <strong className="text-white">cultivos</strong> en
-              las pulverizaciones.
+              <strong className="font-bold">tratamientos</strong> que se aplican
+              a los <strong className="font-bold">cultivos</strong> en las
+              pulverizaciones.
             </p>
           </div>
           <div className="flex items-center justify-center gap-12">
@@ -168,12 +168,12 @@ export default function FeaturesContainer() {
         <div className="embla__slide flex min-h-dvh min-w-0 flex-[0_0_100%] flex-row items-center justify-evenly gap-12 p-12">
           <div className="flex flex-col gap-2">
             <h4 className="text-6xl font-bold">Ubicaciones</h4>
-            <p className="max-w-lg text-xl text-gray-300">
+            <p className="max-w-lg text-xl font-extralight">
               Identificá los distintos{" "}
-              <strong className="text-white">campos</strong> en los que se
+              <strong className="font-bold">campos</strong> en los que se
               trabaja, indicando su nombre y marcando sus diferentes areas
               mediante puntos, formando así sus{" "}
-              <strong className="text-white">lotes</strong>.
+              <strong className="font-bold">lotes</strong>.
             </p>
           </div>
           <div className="flex items-center justify-center gap-12">
@@ -200,9 +200,9 @@ export default function FeaturesContainer() {
         <div className="embla__slide flex min-h-dvh min-w-0 flex-[0_0_100%] flex-row items-center justify-evenly gap-12 p-12">
           <div className="flex flex-col gap-2">
             <h4 className="text-6xl font-bold">Historial</h4>
-            <p className="max-w-lg text-xl text-gray-300">
-              Llevá un <strong className="text-white">registro</strong> con
-              todos los cambios que hagas en el sistema para mantener un mejor
+            <p className="max-w-lg text-xl font-extralight">
+              Llevá un <strong className="font-bold">registro</strong> con todos
+              los cambios que hagas en el sistema para mantener un mejor
               control.
             </p>
             <h2 className="mt-12 w-fit text-5xl font-thin">

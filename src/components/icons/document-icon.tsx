@@ -14,7 +14,7 @@ export default function DocumentIcon({ size }: Props) {
       strokeWidth="2.5"
       strokeLinecap="round"
       strokeLinejoin="round"
-      className="lucide lucide-file-output-icon lucide-file-output"
+      className="lucide lucide-file-output-icon lucide-file-output shrink-0"
     >
       <path d="M14 2v4a2 2 0 0 0 2 2h4" />
       <path d="M4 7V4a2 2 0 0 1 2-2 2 2 0 0 0-2 2" />

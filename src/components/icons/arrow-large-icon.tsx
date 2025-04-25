@@ -10,7 +10,7 @@ interface Props {
   to: keyof typeof ARROW_DIRECTION;
 }
 
-export default function ArrowIcon({ size, to }: Props) {
+export default function ArrowLargeIcon({ size, to }: Props) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -19,10 +19,10 @@ export default function ArrowIcon({ size, to }: Props) {
       viewBox="0 0 24 24"
       fill="none"
       stroke="currentColor"
-      strokeWidth="2"
+      strokeWidth="1"
       strokeLinecap="round"
       strokeLinejoin="round"
-      className={`lucide lucide-arrow-down-icon lucide-arrow-down ${ARROW_DIRECTION[to]} shrink-0`}
+      className={`lucide lucide-move-right-icon lucide-move-right shrink-0 ${ARROW_DIRECTION[to]}`}
     >
       <path d="M8 18L12 22L16 18" />
       <path d="M12 2V22" />
