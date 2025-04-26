@@ -16,7 +16,7 @@ import matiImage from "/about/mati.jpg";
 
 export default function Home() {
   return (
-    <main className="flex flex-col gap-4">
+    <main className="flex flex-col">
       <header id="home" className="relative flex min-h-dvh flex-col">
         <Navbar />
         <section className="flex w-full grow flex-col items-center justify-center gap-4">
@@ -117,7 +117,7 @@ export default function Home() {
         <div className="flex w-full items-center justify-center gap-24">
           <p className="text-4xl font-thin">¿Te interesa alguno?</p>
           <ArrowLargeIcon size={48} to="RIGHT" />
-          <a href="https://portal.pulvesys.com" target="_blank">
+          <a href="https://myaccount.pulvesys.com" target="_blank">
             <button className="flex w-2xs cursor-pointer items-center justify-center gap-2 rounded-md bg-gray-300 p-2 font-medium text-black hover:bg-gray-200 active:bg-gray-400">
               Registrate
             </button>
@@ -164,7 +164,7 @@ export default function Home() {
         <p className="text-4xl font-thin">
           ¿Que estás esperando?{" "}
           <a
-            href="https://portal.pulvesys.com"
+            href="https://myaccount.pulvesys.com"
             target="_blank"
             className="font-semibold underline"
           >
@@ -172,6 +172,29 @@ export default function Home() {
           </a>
         </p>
       </section>
+      <footer className="relative flex min-h-[50dvh] items-center justify-center bg-black">
+        <div className="flex w-full items-end justify-center gap-48">
+          <div className="flex flex-col gap-2">
+            <img src={logo} className="size-12 rounded-md" />
+            <p className="text-sm opacity-75">© 2025 PulveSys.</p>
+            <p className="text-sm opacity-75">Todos los derechos reservados.</p>
+          </div>
+          <ul className="flex flex-col items-end gap-4 text-sm font-normal">
+            <li className="opacity-50 hover:opacity-100">
+              <a href="#">Inicio</a>
+            </li>
+            <li className="opacity-50 hover:opacity-100">
+              <a href="#">Características</a>
+            </li>
+            <li className="opacity-50 hover:opacity-100">
+              <a href="#">Planes</a>
+            </li>
+            <li className="opacity-50 hover:opacity-100">
+              <a href="#">Nosotros</a>
+            </li>
+          </ul>
+        </div>
+      </footer>
     </main>
   );
 }

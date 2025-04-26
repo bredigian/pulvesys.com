@@ -210,7 +210,7 @@ export default function FeaturesContainer() {
               <br />
               estas funcionalidades?
             </h2>
-            <a href="https://portal.pulvesys.com" target="_blank">
+            <a href="https://myaccount.pulvesys.com" target="_blank">
               <button className="mt-6 flex w-2xs cursor-pointer items-center justify-center gap-2 rounded-md bg-gray-300 p-2 font-medium text-black hover:bg-gray-200 active:bg-gray-400">
                 Creá tu cuenta
                 <SignupIcon size={24} />
