@@ -24,8 +24,8 @@ export default function ArrowIcon({ size, to }: Props) {
       strokeLinejoin="round"
       className={`lucide lucide-arrow-down-icon lucide-arrow-down ${ARROW_DIRECTION[to]} shrink-0`}
     >
-      <path d="M8 18L12 22L16 18" />
-      <path d="M12 2V22" />
+      <path d="M12 5v14" />
+      <path d="m19 12-7 7-7-7" />
     </svg>
   );
 }

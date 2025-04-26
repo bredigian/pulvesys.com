@@ -17,7 +17,7 @@ import { useDotButton } from "../hooks/use-dots";
 import useEmblaCarousel from "embla-carousel-react";
 
 export default function FeaturesContainer() {
-  const [emblaRef, emblaApi] = useEmblaCarousel({ loop: false }, [Autoplay()]);
+  const [emblaRef, emblaApi] = useEmblaCarousel({}, [Autoplay()]);
 
   const onNavButtonClick = useCallback((emblaApi: EmblaCarouselType) => {
     const autoplay = emblaApi?.plugins()?.autoplay;
@@ -206,7 +206,7 @@ export default function FeaturesContainer() {
               control.
             </p>
             <h2 className="mt-12 w-fit text-5xl font-thin">
-              ¿Te interesa probar todas
+              ¿Querés probar todas
               <br />
               estas funcionalidades?
             </h2>
