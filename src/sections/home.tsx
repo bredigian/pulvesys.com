@@ -7,6 +7,7 @@ import {
 
 import ArrowIcon from "../components/icons/arrow-icon";
 import DocumentIcon from "../components/icons/document-icon";
+import { Link } from "react-scroll";
 import PhoneIcon from "../components/icons/phone-icon";
 import logo from "/logo.webp";
 import { motion } from "motion/react";
@@ -23,9 +24,17 @@ export default function HomeSection() {
     >
       <div className="mt-16 flex w-full grow flex-col items-center justify-center gap-4 md:mt-0">
         <motion.img
-          initial={{ opacity: 0, y: 10 }}
-          animate={{ opacity: 100, y: 0 }}
-          transition={{ duration: 0.5, delay: 0.25 }}
+          initial={{
+            opacity: 0,
+            y: 10,
+          }}
+          whileInView={{ opacity: 100, y: 0 }}
+          transition={{
+            duration: 0.5,
+            ease: "easeOut",
+            delay: 0.25,
+          }}
+          viewport={{ once: true, amount: 0.8 }}
           src={logo}
           className="size-16 rounded-md"
         />
@@ -35,17 +44,23 @@ export default function HomeSection() {
             return (
               <motion.span
                 key={`animated-word__${word}`}
-                initial={{ opacity: 0, y: 10, filter: "blur(4px)" }}
-                animate={{ opacity: 100, y: 0, filter: "blur(0px)" }}
+                initial={{
+                  opacity: 0,
+                  y: 10,
+                  filter: "blur(4px)",
+                }}
+                whileInView={{ opacity: 100, y: 0, filter: "blur(0px)" }}
                 transition={{
                   duration: 0.5,
                   ease: "easeOut",
                   delay: 0.25 + (index + 1) * 0.1,
                 }}
+                viewport={{ once: true, amount: 0.8 }}
                 className="text-center text-4xl leading-[1] font-thin last:font-bold md:text-5xl lg:text-6xl"
               >
                 {word}
               </motion.span>
+              // delay: 0.25 + (index + 1) * 0.1,
             );
           })}
         </h1>
@@ -55,13 +70,18 @@ export default function HomeSection() {
             return (
               <motion.span
                 key={`animated-word__${word}-subtitle__${index}`}
-                initial={{ opacity: 0, y: 10, filter: "blur(4px)" }}
-                animate={{ opacity: 50, y: 0, filter: "blur(0px)" }}
+                initial={{
+                  opacity: 0,
+                  y: 10,
+                  filter: "blur(4px)",
+                }}
+                whileInView={{ opacity: 100, y: 0, filter: "blur(0px)" }}
                 transition={{
                   duration: 0.5,
                   ease: "easeOut",
                   delay: 0.25 + (index + 1) * 0.1,
                 }}
+                viewport={{ once: true, amount: 0.8 }}
                 className="text-center text-sm leading-[1] font-medium md:text-base lg:text-lg"
               >
                 {word}
@@ -69,29 +89,40 @@ export default function HomeSection() {
             );
           })}
         </h2>
-        <motion.a
-          initial={{ opacity: 0, y: 10, filter: "blur(4px)" }}
-          animate={{ opacity: 100, y: 0, filter: "blur(0px)" }}
-          transition={{
-            duration: 0.5,
-            ease: "easeOut",
-            delay: 1,
-          }}
-          href="#features"
-        >
-          <button className="mt-12 flex w-2xs cursor-pointer items-center justify-center gap-2 rounded-md bg-gray-300 p-2 text-sm font-medium text-black opacity-50 hover:opacity-100 lg:text-base">
-            Explorar
-            <ArrowIcon size={24} to="DOWN" />
-          </button>
-        </motion.a>
+        <Link smooth duration={500} to="#features">
+          <motion.div
+            animate={{ opacity: 100, y: 0, filter: "blur(0px)" }}
+            initial={{
+              opacity: 0,
+              y: 10,
+              filter: "blur(4px)",
+            }}
+            whileInView={{ opacity: 100, y: 0, filter: "blur(0px)" }}
+            transition={{
+              duration: 0.5,
+              ease: "easeOut",
+              delay: 1,
+            }}
+          >
+            <button className="mt-12 flex w-2xs cursor-pointer items-center justify-center gap-2 rounded-md bg-gray-300 p-2 text-sm font-medium text-black opacity-50 hover:opacity-100 lg:text-base">
+              Explorar
+              <ArrowIcon size={24} to="DOWN" />
+            </button>
+          </motion.div>
+        </Link>
       </div>
       <ul className="flex items-center justify-center gap-8 p-8 opacity-50">
         <TooltipProvider>
           <Tooltip>
             <TooltipTrigger>
               <motion.li
-                initial={{ opacity: 0, y: 10, filter: "blur(4px)" }}
-                animate={{ opacity: 50, y: 0, filter: "blur(0px)" }}
+                animate={{ opacity: 100, y: 0, filter: "blur(0px)" }}
+                initial={{
+                  opacity: 0,
+                  y: 10,
+                  filter: "blur(4px)",
+                }}
+                whileInView={{ opacity: 100, y: 0, filter: "blur(0px)" }}
                 transition={{
                   duration: 0.5,
                   ease: "easeOut",
@@ -115,8 +146,13 @@ export default function HomeSection() {
           <Tooltip>
             <TooltipTrigger>
               <motion.li
-                initial={{ opacity: 0, y: 10, filter: "blur(4px)" }}
-                animate={{ opacity: 50, y: 0, filter: "blur(0px)" }}
+                animate={{ opacity: 100, y: 0, filter: "blur(0px)" }}
+                initial={{
+                  opacity: 0,
+                  y: 10,
+                  filter: "blur(4px)",
+                }}
+                whileInView={{ opacity: 100, y: 0, filter: "blur(0px)" }}
                 transition={{
                   duration: 0.5,
                   ease: "easeOut",
@@ -140,8 +176,13 @@ export default function HomeSection() {
           <Tooltip>
             <TooltipTrigger>
               <motion.li
-                initial={{ opacity: 0, y: 10, filter: "blur(4px)" }}
-                animate={{ opacity: 50, y: 0, filter: "blur(0px)" }}
+                animate={{ opacity: 100, y: 0, filter: "blur(0px)" }}
+                initial={{
+                  opacity: 0,
+                  y: 10,
+                  filter: "blur(4px)",
+                }}
+                whileInView={{ opacity: 100, y: 0, filter: "blur(0px)" }}
                 transition={{
                   duration: 0.5,
                   ease: "easeOut",
