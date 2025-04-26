@@ -8,6 +8,7 @@ import ArrowLargeIcon from "../components/icons/arrow-large-icon";
 import DocumentIcon from "../components/icons/document-icon";
 import DotIcon from "../components/icons/dot-icon";
 import FeaturesContainer from "../components/features-container";
+import Footer from "../components/footer";
 import Navbar from "../components/navbar";
 import PhoneIcon from "../components/icons/phone-icon";
 import gianImage from "/about/gian.jpg";
@@ -172,29 +173,7 @@ export default function Home() {
           </a>
         </p>
       </section>
-      <footer className="relative flex min-h-[50dvh] items-center justify-center bg-black">
-        <div className="flex w-full items-end justify-center gap-48">
-          <div className="flex flex-col gap-2">
-            <img src={logo} className="size-12 rounded-md" />
-            <p className="text-sm opacity-75">© 2025 PulveSys.</p>
-            <p className="text-sm opacity-75">Todos los derechos reservados.</p>
-          </div>
-          <ul className="flex flex-col items-end gap-4 text-sm font-normal">
-            <li className="opacity-50 hover:opacity-100">
-              <a href="#">Inicio</a>
-            </li>
-            <li className="opacity-50 hover:opacity-100">
-              <a href="#">Características</a>
-            </li>
-            <li className="opacity-50 hover:opacity-100">
-              <a href="#">Planes</a>
-            </li>
-            <li className="opacity-50 hover:opacity-100">
-              <a href="#">Nosotros</a>
-            </li>
-          </ul>
-        </div>
-      </footer>
+      <Footer />
     </main>
   );
 }
