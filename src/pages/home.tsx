@@ -4,6 +4,7 @@ import Footer from "../components/footer";
 import HomeSection from "../sections/home";
 import Navbar from "../components/navbar";
 import PlansSection from "../sections/plans";
+import SuscribeNow from "../sections/suscribe-now";
 
 export default function Home() {
   return (
@@ -13,18 +14,7 @@ export default function Home() {
       <FeaturesContainer />
       <PlansSection />
       <AboutSection />
-      <section className="grid h-64 place-items-center bg-zinc-950">
-        <p className="text-4xl font-thin">
-          ¿Que estás esperando?{" "}
-          <a
-            href="https://myaccount.pulvesys.com"
-            target="_blank"
-            className="font-semibold underline"
-          >
-            ¡Comenzá a utilizar PulveSys ya!
-          </a>
-        </p>
-      </section>
+      <SuscribeNow />
       <Footer />
     </main>
   );

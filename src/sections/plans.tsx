@@ -14,25 +14,35 @@ export default function PlansSection() {
       className="flex min-h-dvh flex-col items-center justify-center gap-12"
     >
       <motion.h4
-        initial={{ opacity: 0, y: 10, filter: "blur(4px)" }}
-        animate={{ opacity: 50, y: 0, filter: "blur(0px)" }}
+        initial={{
+          opacity: 0,
+          y: 10,
+          filter: "blur(4px)",
+        }}
+        whileInView={{ opacity: 100, y: 0, filter: "blur(0px)" }}
         transition={{
           duration: 0.5,
           ease: "easeOut",
           delay: 0.25,
         }}
+        viewport={{ once: true, amount: 0.8 }}
         className="text-6xl font-bold"
       >
         Planes
       </motion.h4>
       <motion.p
-        initial={{ opacity: 0, y: 10, filter: "blur(4px)" }}
-        animate={{ opacity: 50, y: 0, filter: "blur(0px)" }}
+        initial={{
+          opacity: 0,
+          y: 10,
+          filter: "blur(4px)",
+        }}
+        whileInView={{ opacity: 100, y: 0, filter: "blur(0px)" }}
         transition={{
           duration: 0.5,
           ease: "easeOut",
           delay: 0.5,
         }}
+        viewport={{ once: true, amount: 0.8 }}
         className="text-center text-2xl font-extralight"
       >
         Contamos con 2 planes de suscripción.
@@ -43,13 +53,18 @@ export default function PlansSection() {
       </motion.p>
       <div className="flex w-full items-center justify-center gap-24">
         <motion.div
-          initial={{ opacity: 0, y: 10, filter: "blur(4px)" }}
-          animate={{ opacity: 50, y: 0, filter: "blur(0px)" }}
+          initial={{
+            opacity: 0,
+            y: 10,
+            filter: "blur(4px)",
+          }}
+          whileInView={{ opacity: 100, y: 0, filter: "blur(0px)" }}
           transition={{
             duration: 0.5,
             ease: "easeOut",
             delay: 0.75,
           }}
+          viewport={{ once: true, amount: 0.8 }}
           className="flex min-h-[30rem] max-w-[420px] flex-col items-center gap-4 rounded-lg border-2 border-white/10 bg-black/50 px-3 py-6"
         >
           <span className="text-2xl font-medium">Plan Individual</span>
@@ -76,13 +91,18 @@ export default function PlansSection() {
           </ul>
         </motion.div>
         <motion.div
-          initial={{ opacity: 0, y: 10, filter: "blur(4px)" }}
-          animate={{ opacity: 50, y: 0, filter: "blur(0px)" }}
+          initial={{
+            opacity: 0,
+            y: 10,
+            filter: "blur(4px)",
+          }}
+          whileInView={{ opacity: 100, y: 0, filter: "blur(0px)" }}
           transition={{
             duration: 0.5,
             ease: "easeOut",
             delay: 1,
           }}
+          viewport={{ once: true, amount: 0.8 }}
           className="flex min-h-[30rem] max-w-[420px] flex-col items-center gap-4 rounded-lg border-2 border-white/10 bg-black/50 px-3 py-6"
         >
           <span className="text-2xl font-medium">Plan Empresa</span>
@@ -111,36 +131,51 @@ export default function PlansSection() {
       </div>
       <div className="flex w-full items-center justify-center gap-24">
         <motion.p
-          initial={{ opacity: 0, y: 10, filter: "blur(4px)" }}
-          animate={{ opacity: 50, y: 0, filter: "blur(0px)" }}
+          initial={{
+            opacity: 0,
+            y: 10,
+            filter: "blur(4px)",
+          }}
+          whileInView={{ opacity: 100, y: 0, filter: "blur(0px)" }}
           transition={{
             duration: 0.5,
             ease: "easeOut",
             delay: 1.25,
           }}
+          viewport={{ once: true, amount: 0.8 }}
           className="text-4xl font-thin"
         >
           ¿Te interesa alguno?
         </motion.p>
         <motion.div
-          initial={{ opacity: 0, y: 10, filter: "blur(4px)" }}
-          animate={{ opacity: 50, y: 0, filter: "blur(0px)" }}
+          initial={{
+            opacity: 0,
+            y: 10,
+            filter: "blur(4px)",
+          }}
+          whileInView={{ opacity: 100, y: 0, filter: "blur(0px)" }}
           transition={{
             duration: 0.5,
             ease: "easeOut",
             delay: 1.5,
           }}
+          viewport={{ once: true, amount: 0.8 }}
         >
           <ArrowLargeIcon size={48} to="RIGHT" />
         </motion.div>
         <motion.a
-          initial={{ opacity: 0, y: 10, filter: "blur(4px)" }}
-          animate={{ opacity: 50, y: 0, filter: "blur(0px)" }}
+          initial={{
+            opacity: 0,
+            y: 10,
+            filter: "blur(4px)",
+          }}
+          whileInView={{ opacity: 100, y: 0, filter: "blur(0px)" }}
           transition={{
             duration: 0.5,
             ease: "easeOut",
             delay: 1.5,
           }}
+          viewport={{ once: true, amount: 0.8 }}
           href="https://myaccount.pulvesys.com"
           target="_blank"
         >

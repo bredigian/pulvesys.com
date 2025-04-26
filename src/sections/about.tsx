@@ -7,25 +7,35 @@ export default function AboutSection() {
     <section id="about" className="flex min-h-dvh items-center justify-around">
       <div className="flex flex-col gap-4">
         <motion.h4
-          initial={{ opacity: 0, y: 10, filter: "blur(4px)" }}
-          animate={{ opacity: 50, y: 0, filter: "blur(0px)" }}
+          initial={{
+            opacity: 0,
+            y: 10,
+            filter: "blur(4px)",
+          }}
+          whileInView={{ opacity: 100, y: 0, filter: "blur(0px)" }}
           transition={{
             duration: 0.5,
             ease: "easeOut",
             delay: 0.25,
           }}
+          viewport={{ once: true, amount: 0.8 }}
           className="text-6xl font-bold"
         >
           ¿Quiénes somos?
         </motion.h4>
         <motion.p
-          initial={{ opacity: 0, y: 10, filter: "blur(4px)" }}
-          animate={{ opacity: 50, y: 0, filter: "blur(0px)" }}
+          initial={{
+            opacity: 0,
+            y: 10,
+            filter: "blur(4px)",
+          }}
+          whileInView={{ opacity: 100, y: 0, filter: "blur(0px)" }}
           transition={{
             duration: 0.5,
             ease: "easeOut",
             delay: 0.5,
           }}
+          viewport={{ once: true, amount: 0.8 }}
           className="max-w-2xl text-2xl font-extralight"
         >
           Detrás de esto, nos encontramos:{" "}
@@ -37,13 +47,18 @@ export default function AboutSection() {
         </motion.p>
       </div>
       <motion.div
-        initial={{ opacity: 0, y: 10, filter: "blur(4px)" }}
-        animate={{ opacity: 50, y: 0, filter: "blur(0px)" }}
+        initial={{
+          opacity: 0,
+          y: 10,
+          filter: "blur(4px)",
+        }}
+        whileInView={{ opacity: 100, y: 0, filter: "blur(0px)" }}
         transition={{
           duration: 0.5,
           ease: "easeOut",
           delay: 0.75,
         }}
+        viewport={{ once: true, amount: 0.8 }}
         className="flex items-center gap-24"
       >
         <div className="flex flex-col items-center gap-2">
