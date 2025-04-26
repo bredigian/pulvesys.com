@@ -24,6 +24,7 @@ export default function HomeSection() {
           {TITLE.split(" ").map((word, index) => {
             return (
               <motion.span
+                key={`animated-word__${word}`}
                 initial={{ opacity: 0, y: 10, filter: "blur(4px)" }}
                 animate={{ opacity: 100, y: 0, filter: "blur(0px)" }}
                 transition={{
@@ -43,6 +44,7 @@ export default function HomeSection() {
           {SUBTITLE.split(" ").map((word, index) => {
             return (
               <motion.span
+                key={`animated-word__${word}-subtitle__${index}`}
                 initial={{ opacity: 0, y: 10, filter: "blur(4px)" }}
                 animate={{ opacity: 50, y: 0, filter: "blur(0px)" }}
                 transition={{
