@@ -73,7 +73,7 @@ export default function HomeSection() {
           </button>
         </motion.a>
       </div>
-      <ul className="flex items-center justify-center gap-8 p-8">
+      <ul className="flex items-center justify-center gap-8 p-8 opacity-50">
         <motion.li
           initial={{ opacity: 0, y: 10, filter: "blur(4px)" }}
           animate={{ opacity: 50, y: 0, filter: "blur(0px)" }}
