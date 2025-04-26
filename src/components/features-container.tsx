@@ -68,7 +68,7 @@ export default function FeaturesContainer() {
       ref={emblaRef}
     >
       <div className="embla__container flex">
-        <div className="embla__slide flex min-h-dvh min-w-0 flex-[0_0_100%] flex-row items-center justify-evenly gap-12 p-12">
+        <div className="embla__slide flex min-h-dvh min-w-0 flex-[0_0_100%] flex-col items-center justify-evenly gap-0 p-12 lg:gap-12 xl:flex-row">
           <div className="flex flex-col gap-2">
             <motion.h2
               initial={{
@@ -83,7 +83,7 @@ export default function FeaturesContainer() {
                 delay: 0.25,
               }}
               viewport={{ once: true, amount: 0.8 }}
-              className="mb-12 w-fit text-5xl font-thin"
+              className="mb-6 hidden w-fit text-3xl font-thin md:block md:text-4xl xl:mb-8 xl:text-5xl 2xl:mb-12"
             >
               ¿Que se puede hacer?
             </motion.h2>
@@ -100,7 +100,7 @@ export default function FeaturesContainer() {
                 delay: 0.5,
               }}
               viewport={{ once: true, amount: 0.8 }}
-              className="text-6xl font-bold"
+              className="text-4xl font-bold md:text-5xl lg:text-6xl"
             >
               Pulverizaciones
             </motion.h4>
@@ -117,7 +117,7 @@ export default function FeaturesContainer() {
                 delay: 0.75,
               }}
               viewport={{ once: true, amount: 0.8 }}
-              className="max-w-lg text-xl font-extralight"
+              className="max-w-lg text-base font-extralight md:text-lg lg:text-xl"
             >
               Creá tus órdenes indicando{" "}
               <strong className="font-bold">campo</strong>,{" "}
@@ -127,7 +127,7 @@ export default function FeaturesContainer() {
               con sus respectivas dósis.
             </motion.p>
           </div>
-          <div className="flex items-center justify-center gap-12">
+          <div className="flex max-w-[860px] items-center justify-center gap-12 xl:max-w-max">
             <motion.div
               initial={{
                 opacity: 0,
@@ -164,7 +164,7 @@ export default function FeaturesContainer() {
                 delay: 0.75,
               }}
               viewport={{ once: true, amount: 0.8 }}
-              className="mx-auto max-w-xs"
+              className="mx-auto hidden max-w-xs md:block"
             >
               <div className="aspect-[9/19] w-full">
                 <img
@@ -187,7 +187,7 @@ export default function FeaturesContainer() {
                 delay: 1,
               }}
               viewport={{ once: true, amount: 0.8 }}
-              className="mx-auto max-w-xs"
+              className="mx-auto hidden max-w-xs md:block"
             >
               <div className="aspect-[9/19] w-full">
                 <img
@@ -199,7 +199,7 @@ export default function FeaturesContainer() {
             </motion.div>
           </div>
         </div>
-        <div className="embla__slide flex min-h-dvh min-w-0 flex-[0_0_100%] flex-row items-center justify-evenly gap-12 p-12">
+        <div className="embla__slide flex min-h-dvh min-w-0 flex-[0_0_100%] flex-col items-center justify-evenly gap-0 p-12 lg:flex-row lg:gap-12">
           <div className="flex flex-col gap-2">
             <motion.h4
               initial={{
@@ -214,7 +214,7 @@ export default function FeaturesContainer() {
                 delay: 0.25,
               }}
               viewport={{ once: true, amount: 0.8 }}
-              className="text-6xl font-bold"
+              className="text-4xl font-bold md:text-5xl lg:text-6xl"
             >
               Productos
             </motion.h4>
@@ -231,7 +231,7 @@ export default function FeaturesContainer() {
                 delay: 0.5,
               }}
               viewport={{ once: true, amount: 0.8 }}
-              className="max-w-lg text-xl font-extralight"
+              className="max-w-lg text-base font-extralight md:text-lg lg:text-xl"
             >
               <strong className="font-bold">Agregá</strong>,{" "}
               <strong className="font-bold">modificá</strong> y{" "}
@@ -256,9 +256,9 @@ export default function FeaturesContainer() {
                 delay: 0.5,
               }}
               viewport={{ once: true, amount: 0.8 }}
-              className="mx-auto max-w-xs"
+              className="mx-auto hidden max-w-xs md:block"
             >
-              <div className="aspect-[9/19] w-full">
+              <div className="mx-auto aspect-[9/19] w-full md:w-[75%] lg:w-full">
                 <img
                   src={productosScreen1}
                   alt=""
@@ -281,7 +281,7 @@ export default function FeaturesContainer() {
               viewport={{ once: true, amount: 0.8 }}
               className="mx-auto max-w-xs"
             >
-              <div className="aspect-[9/19] w-full">
+              <div className="mx-auto aspect-[9/19] w-full md:w-[75%] lg:w-full">
                 <img
                   src={productosScreen2}
                   alt=""
@@ -291,7 +291,7 @@ export default function FeaturesContainer() {
             </motion.div>
           </div>
         </div>
-        <div className="embla__slide flex min-h-dvh min-w-0 flex-[0_0_100%] flex-row items-center justify-evenly gap-12 p-12">
+        <div className="embla__slide flex min-h-dvh min-w-0 flex-[0_0_100%] flex-col items-center justify-evenly gap-0 p-12 lg:gap-12 xl:flex-row">
           <div className="flex flex-col gap-2">
             <motion.h4
               initial={{
@@ -306,7 +306,7 @@ export default function FeaturesContainer() {
                 delay: 0.25,
               }}
               viewport={{ once: true, amount: 0.8 }}
-              className="text-6xl font-bold"
+              className="text-4xl font-bold md:text-5xl lg:text-6xl"
             >
               Cultivos
               <br />& Tratamientos
@@ -324,7 +324,7 @@ export default function FeaturesContainer() {
                 delay: 0.5,
               }}
               viewport={{ once: true, amount: 0.8 }}
-              className="max-w-lg text-xl font-extralight"
+              className="max-w-lg text-base font-extralight md:text-lg lg:text-xl"
             >
               Administrá los diferentes tipos de{" "}
               <strong className="font-bold">tratamientos</strong> que se aplican
@@ -332,7 +332,7 @@ export default function FeaturesContainer() {
               pulverizaciones.
             </motion.p>
           </div>
-          <div className="flex items-center justify-center gap-12">
+          <div className="flex max-w-[890px] items-center justify-center gap-12 xl:max-w-max">
             <motion.div
               initial={{
                 opacity: 0,
@@ -369,7 +369,7 @@ export default function FeaturesContainer() {
                 delay: 0.75,
               }}
               viewport={{ once: true, amount: 0.8 }}
-              className="mx-auto max-w-xs"
+              className="mx-auto hidden max-w-xs md:block"
             >
               <div className="aspect-[9/19] w-full">
                 <img
@@ -392,7 +392,7 @@ export default function FeaturesContainer() {
                 delay: 1,
               }}
               viewport={{ once: true, amount: 0.8 }}
-              className="mx-auto max-w-xs"
+              className="mx-auto hidden max-w-xs md:block"
             >
               <div className="aspect-[9/19] w-full">
                 <img
@@ -404,7 +404,7 @@ export default function FeaturesContainer() {
             </motion.div>
           </div>
         </div>
-        <div className="embla__slide flex min-h-dvh min-w-0 flex-[0_0_100%] flex-row items-center justify-evenly gap-12 p-12">
+        <div className="embla__slide flex min-h-dvh min-w-0 flex-[0_0_100%] flex-col items-center justify-evenly gap-0 p-12 lg:flex-row lg:gap-12">
           <div className="flex flex-col gap-2">
             <motion.h4
               initial={{
@@ -419,7 +419,7 @@ export default function FeaturesContainer() {
                 delay: 0.25,
               }}
               viewport={{ once: true, amount: 0.8 }}
-              className="text-6xl font-bold"
+              className="text-4xl font-bold md:text-5xl lg:text-6xl"
             >
               Ubicaciones
             </motion.h4>
@@ -436,7 +436,7 @@ export default function FeaturesContainer() {
                 delay: 0.5,
               }}
               viewport={{ once: true, amount: 0.8 }}
-              className="max-w-lg text-xl font-extralight"
+              className="max-w-lg text-base font-extralight md:text-lg lg:text-xl"
             >
               Identificá los distintos{" "}
               <strong className="font-bold">campos</strong> en los que se
@@ -459,9 +459,9 @@ export default function FeaturesContainer() {
                 delay: 0.5,
               }}
               viewport={{ once: true, amount: 0.8 }}
-              className="mx-auto max-w-xs"
+              className="mx-auto hidden max-w-xs md:block"
             >
-              <div className="aspect-[9/19] w-full">
+              <div className="mx-auto aspect-[9/19] w-full md:w-[75%] lg:w-full">
                 <img
                   src={camposScreen1}
                   alt=""
@@ -484,7 +484,7 @@ export default function FeaturesContainer() {
               viewport={{ once: true, amount: 0.8 }}
               className="mx-auto max-w-xs"
             >
-              <div className="aspect-[9/19] w-full">
+              <div className="mx-auto aspect-[9/19] w-full md:w-[75%] lg:w-full">
                 <img
                   src={camposScreen2}
                   alt=""
@@ -494,7 +494,7 @@ export default function FeaturesContainer() {
             </motion.div>
           </div>
         </div>
-        <div className="embla__slide flex min-h-dvh min-w-0 flex-[0_0_100%] flex-row items-center justify-evenly gap-12 p-12">
+        <div className="embla__slide flex min-h-dvh min-w-0 flex-[0_0_100%] flex-col items-center justify-evenly gap-0 p-12 md:flex-row md:gap-12">
           <div className="flex flex-col gap-2">
             <motion.h4
               initial={{
@@ -509,7 +509,7 @@ export default function FeaturesContainer() {
                 delay: 0.25,
               }}
               viewport={{ once: true, amount: 0.8 }}
-              className="text-6xl font-bold"
+              className="text-4xl font-bold md:text-5xl lg:text-6xl"
             >
               Historial
             </motion.h4>
@@ -526,7 +526,7 @@ export default function FeaturesContainer() {
                 delay: 0.5,
               }}
               viewport={{ once: true, amount: 0.8 }}
-              className="max-w-lg text-xl font-extralight"
+              className="max-w-lg text-base font-extralight md:text-lg lg:text-xl"
             >
               Llevá un <strong className="font-bold">registro</strong> con todos
               los cambios que hagas en el sistema para mantener un mejor
@@ -545,7 +545,7 @@ export default function FeaturesContainer() {
                 delay: 0.75,
               }}
               viewport={{ once: true, amount: 0.8 }}
-              className="mt-12 w-fit text-5xl font-thin"
+              className="mt-12 hidden w-fit font-thin md:block md:text-4xl lg:text-5xl"
             >
               ¿Querés probar todas
               <br />
@@ -566,8 +566,9 @@ export default function FeaturesContainer() {
               viewport={{ once: true, amount: 0.8 }}
               href="https://myaccount.pulvesys.com"
               target="_blank"
+              className="hidden md:block"
             >
-              <button className="mt-6 flex w-2xs cursor-pointer items-center justify-center gap-2 rounded-md bg-gray-300 p-2 font-medium text-black hover:bg-gray-200 active:bg-gray-400">
+              <button className="mt-6 flex w-2xs cursor-pointer items-center justify-center gap-2 rounded-md bg-gray-300 p-2 text-sm font-medium text-black hover:bg-gray-200 active:bg-gray-400 lg:text-base">
                 Creá tu cuenta
                 <SignupIcon size={24} />
               </button>

@@ -4,8 +4,11 @@ import { motion } from "motion/react";
 
 export default function AboutSection() {
   return (
-    <section id="about" className="flex min-h-dvh items-center justify-around">
-      <div className="flex flex-col gap-4">
+    <section
+      id="about"
+      className="flex min-h-dvh flex-col items-center justify-center gap-12 px-4 lg:flex-row lg:justify-around 2xl:gap-0 2xl:px-0"
+    >
+      <div className="flex flex-col items-center gap-4 2xl:items-start">
         <motion.h4
           initial={{
             opacity: 0,
@@ -19,7 +22,7 @@ export default function AboutSection() {
             delay: 0.25,
           }}
           viewport={{ once: true, amount: 0.8 }}
-          className="text-6xl font-bold"
+          className="text-4xl font-bold md:text-5xl xl:text-6xl"
         >
           ¿Quiénes somos?
         </motion.h4>
@@ -36,7 +39,7 @@ export default function AboutSection() {
             delay: 0.5,
           }}
           viewport={{ once: true, amount: 0.8 }}
-          className="max-w-2xl text-2xl font-extralight"
+          className="max-w-2xl text-center text-lg font-extralight md:text-xl lg:text-2xl 2xl:text-start"
         >
           Detrás de esto, nos encontramos:{" "}
           <strong className="font-bold">Matías Rodríguez</strong> (ingeniero
@@ -59,10 +62,10 @@ export default function AboutSection() {
           delay: 0.75,
         }}
         viewport={{ once: true, amount: 0.8 }}
-        className="flex items-center gap-24"
+        className="flex flex-wrap items-center justify-center gap-8 md:gap-24"
       >
         <div className="flex flex-col items-center gap-2">
-          <div className="aspect-square size-64">
+          <div className="aspect-square size-44 md:size-64">
             <img
               src={matiImage}
               className="size-full rounded-lg object-cover"
@@ -71,7 +74,7 @@ export default function AboutSection() {
           <p className="text-lg font-light">Matías Rodríguez</p>
         </div>
         <div className="flex flex-col items-center gap-2">
-          <div className="aspect-square size-64">
+          <div className="aspect-square size-44 md:size-64">
             <img
               src={gianImage}
               className="size-full rounded-lg object-cover"

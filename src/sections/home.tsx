@@ -17,8 +17,11 @@ export default function HomeSection() {
     "Un sistema web dedicado a la gestión de órdenes de pulverización.";
 
   return (
-    <section id="home" className="flex min-h-dvh flex-col items-center">
-      <div className="flex w-full grow flex-col items-center justify-center gap-4">
+    <section
+      id="home"
+      className="flex min-h-[70dvh] flex-col items-center px-4 md:min-h-dvh md:px-0"
+    >
+      <div className="mt-16 flex w-full grow flex-col items-center justify-center gap-4 md:mt-0">
         <motion.img
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 100, y: 0 }}
@@ -39,7 +42,7 @@ export default function HomeSection() {
                   ease: "easeOut",
                   delay: 0.25 + (index + 1) * 0.1,
                 }}
-                className="text-center text-6xl leading-[1] text-neutral-300"
+                className="text-center text-4xl leading-[1] text-neutral-300 md:text-5xl lg:text-6xl"
               >
                 {word}
               </motion.span>
@@ -47,7 +50,7 @@ export default function HomeSection() {
           })}
         </h1>
         <h2 className="hidden">{SUBTITLE}</h2>
-        <h2 className="flex max-w-sm flex-wrap items-center justify-center gap-2 opacity-50">
+        <h2 className="flex max-w-sm flex-wrap items-center justify-center gap-1 opacity-50 lg:gap-2">
           {SUBTITLE.split(" ").map((word, index) => {
             return (
               <motion.span
@@ -59,7 +62,7 @@ export default function HomeSection() {
                   ease: "easeOut",
                   delay: 0.25 + (index + 1) * 0.1,
                 }}
-                className="text-center text-lg leading-[1] font-medium"
+                className="text-center text-sm leading-[1] font-medium md:text-base lg:text-lg"
               >
                 {word}
               </motion.span>
@@ -76,7 +79,7 @@ export default function HomeSection() {
           }}
           href="#features"
         >
-          <button className="mt-12 flex w-2xs cursor-pointer items-center justify-center gap-2 rounded-md bg-gray-300 p-2 font-medium text-black opacity-50 hover:opacity-100">
+          <button className="mt-12 flex w-2xs cursor-pointer items-center justify-center gap-2 rounded-md bg-gray-300 p-2 text-sm font-medium text-black opacity-50 hover:opacity-100 lg:text-base">
             Explorar
             <ArrowIcon size={24} to="DOWN" />
           </button>
@@ -97,7 +100,7 @@ export default function HomeSection() {
                 className="flex cursor-help flex-col items-center gap-1 opacity-50 hover:opacity-100"
               >
                 <span className="text-2xl leading-[1] line-through">$0</span>
-                <p className="text-sm">30 días gratis</p>
+                <p className="text-xs md:text-sm">30 días gratis</p>
               </motion.li>
             </TooltipTrigger>
             <TooltipContent>
@@ -122,7 +125,7 @@ export default function HomeSection() {
                 className="flex cursor-help flex-col items-center gap-1 opacity-50 hover:opacity-100"
               >
                 <PhoneIcon size={24} />
-                <p className="text-sm">Soporte PWA</p>
+                <p className="text-xs md:text-sm">Soporte PWA</p>
               </motion.li>
             </TooltipTrigger>
             <TooltipContent>
@@ -147,7 +150,7 @@ export default function HomeSection() {
                 className="flex cursor-help flex-col items-center gap-1 opacity-50 hover:opacity-100"
               >
                 <DocumentIcon size={24} />
-                <p className="text-sm">Comparte tus órdenes</p>
+                <p className="text-xs md:text-sm">Comparte tus órdenes</p>
               </motion.li>
             </TooltipTrigger>
             <TooltipContent>

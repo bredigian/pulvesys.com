@@ -11,7 +11,7 @@ export default function PlansSection() {
   return (
     <section
       id="plans"
-      className="flex min-h-dvh flex-col items-center justify-center gap-12"
+      className="flex min-h-dvh flex-col items-center justify-center gap-12 px-4 md:px-0"
     >
       <motion.h4
         initial={{
@@ -26,7 +26,7 @@ export default function PlansSection() {
           delay: 0.25,
         }}
         viewport={{ once: true, amount: 0.8 }}
-        className="text-6xl font-bold"
+        className="text-4xl font-bold md:text-5xl lg:text-6xl"
       >
         Planes
       </motion.h4>
@@ -43,7 +43,7 @@ export default function PlansSection() {
           delay: 0.5,
         }}
         viewport={{ once: true, amount: 0.8 }}
-        className="text-center text-2xl font-extralight"
+        className="text-center text-lg font-extralight md:text-xl lg:text-2xl"
       >
         Contamos con 2 planes de suscripción.
         <br />
@@ -51,7 +51,7 @@ export default function PlansSection() {
         <strong className="font-bold">30 días de prueba gratuíta</strong>, sin
         necesidad de pagar nada.
       </motion.p>
-      <div className="flex w-full items-center justify-center gap-24">
+      <div className="flex w-full flex-wrap items-center justify-center gap-12 px-4 lg:gap-24">
         <motion.div
           initial={{
             opacity: 0,
@@ -65,10 +65,12 @@ export default function PlansSection() {
             delay: 0.75,
           }}
           viewport={{ once: true, amount: 0.8 }}
-          className="flex min-h-[30rem] max-w-[420px] flex-col items-center gap-4 rounded-lg border-2 border-white/10 bg-black/50 px-3 py-6"
+          className="flex min-h-fit max-w-[420px] flex-col items-center gap-4 rounded-lg border-2 border-white/10 bg-black/50 px-3 py-6 md:min-h-[26rem] lg:min-h-[30rem]"
         >
-          <span className="text-2xl font-medium">Plan Individual</span>
-          <h5 className="text-4xl font-bold">
+          <span className="text-xl font-medium lg:text-2xl">
+            Plan Individual
+          </span>
+          <h5 className="text-3xl font-bold lg:text-4xl">
             {Intl.NumberFormat("es-AR", {
               style: "currency",
               currency: "ARS",
@@ -85,7 +87,9 @@ export default function PlansSection() {
                 className="flex items-start gap-1 opacity-75"
               >
                 <DotIcon size={24} />
-                <p className="max-w-2xs pr-3 text-sm lg:text-base">{value}</p>
+                <p className="max-w-2xs pr-3 text-xs md:text-sm lg:text-base">
+                  {value}
+                </p>
               </li>
             ))}
           </ul>
@@ -103,10 +107,10 @@ export default function PlansSection() {
             delay: 1,
           }}
           viewport={{ once: true, amount: 0.8 }}
-          className="flex min-h-[30rem] max-w-[420px] flex-col items-center gap-4 rounded-lg border-2 border-white/10 bg-black/50 px-3 py-6"
+          className="flex min-h-fit max-w-[420px] flex-col items-center gap-4 rounded-lg border-2 border-white/10 bg-black/50 px-3 py-6 md:min-h-[26rem] lg:min-h-[30rem]"
         >
-          <span className="text-2xl font-medium">Plan Empresa</span>
-          <h5 className="text-4xl font-bold">
+          <span className="text-xl font-medium lg:text-2xl">Plan Empresa</span>
+          <h5 className="text-3xl font-bold lg:text-4xl">
             {Intl.NumberFormat("es-AR", {
               style: "currency",
               currency: "ARS",
@@ -123,13 +127,15 @@ export default function PlansSection() {
                 className="flex items-start gap-1 opacity-75"
               >
                 <DotIcon size={24} />
-                <p className="max-w-2xs pr-3 text-sm lg:text-base">{value}</p>
+                <p className="max-w-2xs pr-3 text-xs md:text-sm lg:text-base">
+                  {value}
+                </p>
               </li>
             ))}
           </ul>
         </motion.div>
       </div>
-      <div className="flex w-full items-center justify-center gap-24">
+      <div className="flex w-full flex-wrap items-center justify-center gap-12 lg:gap-24">
         <motion.p
           initial={{
             opacity: 0,
@@ -143,7 +149,7 @@ export default function PlansSection() {
             delay: 1.25,
           }}
           viewport={{ once: true, amount: 0.8 }}
-          className="text-4xl font-thin"
+          className="text-3xl font-thin lg:text-4xl"
         >
           ¿Te interesa alguno?
         </motion.p>
@@ -160,6 +166,7 @@ export default function PlansSection() {
             delay: 1.5,
           }}
           viewport={{ once: true, amount: 0.8 }}
+          className="hidden md:block"
         >
           <ArrowLargeIcon size={48} to="RIGHT" />
         </motion.div>
@@ -179,7 +186,7 @@ export default function PlansSection() {
           href="https://myaccount.pulvesys.com"
           target="_blank"
         >
-          <button className="flex w-2xs cursor-pointer items-center justify-center gap-2 rounded-md bg-gray-300 p-2 font-medium text-black hover:bg-gray-200 active:bg-gray-400">
+          <button className="flex w-2xs cursor-pointer items-center justify-center gap-2 rounded-md bg-gray-300 p-2 text-sm font-medium text-black hover:bg-gray-200 active:bg-gray-400 md:text-base">
             Registrate
           </button>
         </motion.a>

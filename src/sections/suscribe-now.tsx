@@ -4,8 +4,8 @@ export default function SuscribeNow() {
   const ANIMATED_TEXT = "¿Qué estás esperando?";
 
   return (
-    <section className="grid h-64 place-items-center bg-zinc-950">
-      <p className="flex items-center gap-2 text-4xl font-thin">
+    <section className="flex h-64 items-center justify-center bg-zinc-950 px-4">
+      <p className="flex flex-wrap items-center justify-center gap-2 text-center text-3xl font-thin lg:text-4xl">
         {ANIMATED_TEXT.split(" ").map((word, index) => (
           <motion.span
             initial={{
