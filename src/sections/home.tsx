@@ -1,3 +1,10 @@
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipProvider,
+  TooltipTrigger,
+} from "../components/ui/tooltip";
+
 import ArrowIcon from "../components/icons/arrow-icon";
 import DocumentIcon from "../components/icons/document-icon";
 import PhoneIcon from "../components/icons/phone-icon";
@@ -76,45 +83,80 @@ export default function HomeSection() {
         </motion.a>
       </div>
       <ul className="flex items-center justify-center gap-8 p-8 opacity-50">
-        <motion.li
-          initial={{ opacity: 0, y: 10, filter: "blur(4px)" }}
-          animate={{ opacity: 50, y: 0, filter: "blur(0px)" }}
-          transition={{
-            duration: 0.5,
-            ease: "easeOut",
-            delay: 1,
-          }}
-          className="flex cursor-help flex-col items-center gap-1 opacity-50 hover:opacity-100"
-        >
-          <span className="text-2xl leading-[1] line-through">$0</span>
-          <p className="text-sm">30 días gratis</p>
-        </motion.li>
-        <motion.li
-          initial={{ opacity: 0, y: 10, filter: "blur(4px)" }}
-          animate={{ opacity: 50, y: 0, filter: "blur(0px)" }}
-          transition={{
-            duration: 0.5,
-            ease: "easeOut",
-            delay: 1.1,
-          }}
-          className="flex cursor-help flex-col items-center gap-1 opacity-50 hover:opacity-100"
-        >
-          <PhoneIcon size={24} />
-          <p className="text-sm">Soporte PWA</p>
-        </motion.li>
-        <motion.li
-          initial={{ opacity: 0, y: 10, filter: "blur(4px)" }}
-          animate={{ opacity: 50, y: 0, filter: "blur(0px)" }}
-          transition={{
-            duration: 0.5,
-            ease: "easeOut",
-            delay: 1.2,
-          }}
-          className="flex cursor-help flex-col items-center gap-1 opacity-50 hover:opacity-100"
-        >
-          <DocumentIcon size={24} />
-          <p className="text-sm">Comparte tus órdenes</p>
-        </motion.li>
+        <TooltipProvider>
+          <Tooltip>
+            <TooltipTrigger>
+              <motion.li
+                initial={{ opacity: 0, y: 10, filter: "blur(4px)" }}
+                animate={{ opacity: 50, y: 0, filter: "blur(0px)" }}
+                transition={{
+                  duration: 0.5,
+                  ease: "easeOut",
+                  delay: 1,
+                }}
+                className="flex cursor-help flex-col items-center gap-1 opacity-50 hover:opacity-100"
+              >
+                <span className="text-2xl leading-[1] line-through">$0</span>
+                <p className="text-sm">30 días gratis</p>
+              </motion.li>
+            </TooltipTrigger>
+            <TooltipContent>
+              <p className="max-w-2xs rounded-lg bg-white p-1 text-center text-black">
+                Utilizá el sistema sin pagar absolutamente nada durante los
+                primeros 30 días
+              </p>
+            </TooltipContent>
+          </Tooltip>
+        </TooltipProvider>
+        <TooltipProvider>
+          <Tooltip>
+            <TooltipTrigger>
+              <motion.li
+                initial={{ opacity: 0, y: 10, filter: "blur(4px)" }}
+                animate={{ opacity: 50, y: 0, filter: "blur(0px)" }}
+                transition={{
+                  duration: 0.5,
+                  ease: "easeOut",
+                  delay: 1.1,
+                }}
+                className="flex cursor-help flex-col items-center gap-1 opacity-50 hover:opacity-100"
+              >
+                <PhoneIcon size={24} />
+                <p className="text-sm">Soporte PWA</p>
+              </motion.li>
+            </TooltipTrigger>
+            <TooltipContent>
+              <p className="max-w-2xs rounded-lg bg-white p-1 text-center text-black">
+                Agregá la aplicación al inicio de tu celular como si fuese una
+                app nativa
+              </p>
+            </TooltipContent>
+          </Tooltip>
+        </TooltipProvider>
+        <TooltipProvider>
+          <Tooltip>
+            <TooltipTrigger>
+              <motion.li
+                initial={{ opacity: 0, y: 10, filter: "blur(4px)" }}
+                animate={{ opacity: 50, y: 0, filter: "blur(0px)" }}
+                transition={{
+                  duration: 0.5,
+                  ease: "easeOut",
+                  delay: 1.2,
+                }}
+                className="flex cursor-help flex-col items-center gap-1 opacity-50 hover:opacity-100"
+              >
+                <DocumentIcon size={24} />
+                <p className="text-sm">Comparte tus órdenes</p>
+              </motion.li>
+            </TooltipTrigger>
+            <TooltipContent>
+              <p className="max-w-2xs rounded-lg bg-white p-1 text-center text-black">
+                Exporta rápidamente tus órdenes en formato PDF
+              </p>
+            </TooltipContent>
+          </Tooltip>
+        </TooltipProvider>
       </ul>
     </section>
   );
