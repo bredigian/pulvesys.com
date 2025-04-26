@@ -17,9 +17,9 @@ import matiImage from "/about/mati.jpg";
 
 export default function Home() {
   return (
-    <main className="flex flex-col">
-      <header id="home" className="relative flex min-h-dvh flex-col">
-        <Navbar />
+    <main className="relative flex flex-col">
+      <Navbar />
+      <section id="home" className="flex min-h-dvh flex-col">
         <section className="flex w-full grow flex-col items-center justify-center gap-4">
           <img src={logo} className="size-16 rounded-md" />
           <h1 className="text-center text-6xl leading-[1.1] text-gray-300">
@@ -51,7 +51,7 @@ export default function Home() {
             <p className="text-sm">Comparte tus órdenes</p>
           </li>
         </ul>
-      </header>
+      </section>
       <FeaturesContainer />
       <section
         id="plans"
