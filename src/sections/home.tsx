@@ -100,7 +100,7 @@ export default function HomeSection() {
                 className="flex cursor-help flex-col items-center gap-1 opacity-50 hover:opacity-100"
               >
                 <span className="text-2xl leading-[1] line-through">$0</span>
-                <p className="text-xs md:text-sm">30 días gratis</p>
+                <p className="text-xs md:text-sm">Prueba gratuíta</p>
               </motion.li>
             </TooltipTrigger>
             <TooltipContent>
@@ -150,7 +150,7 @@ export default function HomeSection() {
                 className="flex cursor-help flex-col items-center gap-1 opacity-50 hover:opacity-100"
               >
                 <DocumentIcon size={24} />
-                <p className="text-xs md:text-sm">Comparte tus órdenes</p>
+                <p className="text-xs md:text-sm">Comparte info.</p>
               </motion.li>
             </TooltipTrigger>
             <TooltipContent>
