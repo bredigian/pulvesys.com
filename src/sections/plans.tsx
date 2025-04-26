@@ -10,7 +10,7 @@ import { motion } from "motion/react";
 export default function PlansSection() {
   return (
     <section
-      id="plans"
+      id="#plans"
       className="flex min-h-dvh flex-col items-center justify-center gap-12 px-4 md:px-0"
     >
       <motion.h4

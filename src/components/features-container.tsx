@@ -63,7 +63,7 @@ export default function FeaturesContainer() {
 
   return (
     <section
-      id="features"
+      id="#features"
       className="embla relative flex flex-col overflow-hidden"
       ref={emblaRef}
     >

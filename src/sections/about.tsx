@@ -5,7 +5,7 @@ import { motion } from "motion/react";
 export default function AboutSection() {
   return (
     <section
-      id="about"
+      id="#about"
       className="flex min-h-dvh flex-col items-center justify-center gap-12 px-4 lg:flex-row lg:justify-around 2xl:gap-0 2xl:px-0"
     >
       <div className="flex flex-col items-center gap-4 2xl:items-start">

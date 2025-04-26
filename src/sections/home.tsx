@@ -18,7 +18,7 @@ export default function HomeSection() {
 
   return (
     <section
-      id="home"
+      id="#"
       className="flex min-h-[70dvh] flex-col items-center px-4 md:min-h-dvh md:px-0"
     >
       <div className="mt-16 flex w-full grow flex-col items-center justify-center gap-4 md:mt-0">
