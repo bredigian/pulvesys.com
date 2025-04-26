@@ -42,7 +42,7 @@ export default function HomeSection() {
                   ease: "easeOut",
                   delay: 0.25 + (index + 1) * 0.1,
                 }}
-                className="text-center text-4xl leading-[1] text-neutral-300 md:text-5xl lg:text-6xl"
+                className="text-center text-4xl leading-[1] font-thin last:font-bold md:text-5xl lg:text-6xl"
               >
                 {word}
               </motion.span>
