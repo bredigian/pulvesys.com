@@ -17,7 +17,9 @@ import { useDotButton } from "../hooks/use-dots";
 import useEmblaCarousel from "embla-carousel-react";
 
 export default function FeaturesContainer() {
-  const [emblaRef, emblaApi] = useEmblaCarousel({}, [Autoplay()]);
+  const [emblaRef, emblaApi] = useEmblaCarousel({ dragFree: false }, [
+    Autoplay(),
+  ]);
 
   const onNavButtonClick = useCallback((emblaApi: EmblaCarouselType) => {
     const autoplay = emblaApi?.plugins()?.autoplay;
