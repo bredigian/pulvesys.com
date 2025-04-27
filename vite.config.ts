@@ -6,6 +6,6 @@ import tailwindcss from "@tailwindcss/vite";
 export default defineConfig({
   plugins: [react(), tailwindcss()],
   preview: {
-    allowedHosts: ["https://pulvesys.com", "https://www.pulvesys.com"],
+    allowedHosts: [".pulvesys.com"],
   },
 });
