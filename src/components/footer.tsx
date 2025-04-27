@@ -1,3 +1,4 @@
+import { Link } from "react-scroll";
 import { ROUTES } from "../const/routes";
 import logo from "/logo.webp";
 
@@ -16,7 +17,14 @@ export default function Footer() {
               key={`${route.href}_footer`}
               className="opacity-50 hover:opacity-100"
             >
-              <a href={route.href}>{route.name}</a>
+              <Link
+                smooth
+                duration={500}
+                to={route.href}
+                className="cursor-pointer"
+              >
+                {route.name}
+              </Link>
             </li>
           ))}
         </ul>
