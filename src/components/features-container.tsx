@@ -140,7 +140,7 @@ export default function FeaturesContainer() {
                 delay: 0.5,
               }}
               viewport={{ once: true, amount: 0.8 }}
-              className="mx-auto max-w-xs"
+              className="mx-auto max-w-[232px] md:max-w-xs"
             >
               <div className="aspect-[9/19] w-full">
                 <img
@@ -163,7 +163,7 @@ export default function FeaturesContainer() {
                 delay: 0.75,
               }}
               viewport={{ once: true, amount: 0.8 }}
-              className="mx-auto hidden max-w-xs md:block"
+              className="mx-auto hidden max-w-[232px] md:block md:max-w-xs"
             >
               <div className="aspect-[9/19] w-full">
                 <img
@@ -186,7 +186,7 @@ export default function FeaturesContainer() {
                 delay: 1,
               }}
               viewport={{ once: true, amount: 0.8 }}
-              className="mx-auto hidden max-w-xs md:block"
+              className="mx-auto hidden max-w-[232px] md:block md:max-w-xs"
             >
               <div className="aspect-[9/19] w-full">
                 <img
@@ -255,7 +255,7 @@ export default function FeaturesContainer() {
                 delay: 0.5,
               }}
               viewport={{ once: true, amount: 0.8 }}
-              className="mx-auto hidden max-w-xs md:block"
+              className="mx-auto hidden max-w-[232px] md:block md:max-w-xs"
             >
               <div className="mx-auto aspect-[9/19] w-full md:w-[75%] lg:w-full">
                 <img
@@ -278,7 +278,7 @@ export default function FeaturesContainer() {
                 delay: 0.75,
               }}
               viewport={{ once: true, amount: 0.8 }}
-              className="mx-auto max-w-xs"
+              className="mx-auto max-w-[232px] md:max-w-xs"
             >
               <div className="mx-auto aspect-[9/19] w-full md:w-[75%] lg:w-full">
                 <img
@@ -345,7 +345,7 @@ export default function FeaturesContainer() {
                 delay: 0.5,
               }}
               viewport={{ once: true, amount: 0.8 }}
-              className="mx-auto max-w-xs"
+              className="mx-auto max-w-[232px] md:max-w-xs"
             >
               <div className="aspect-[9/19] w-full">
                 <img
@@ -368,7 +368,7 @@ export default function FeaturesContainer() {
                 delay: 0.75,
               }}
               viewport={{ once: true, amount: 0.8 }}
-              className="mx-auto hidden max-w-xs md:block"
+              className="mx-auto hidden max-w-[232px] md:block md:max-w-xs"
             >
               <div className="aspect-[9/19] w-full">
                 <img
@@ -391,7 +391,7 @@ export default function FeaturesContainer() {
                 delay: 1,
               }}
               viewport={{ once: true, amount: 0.8 }}
-              className="mx-auto hidden max-w-xs md:block"
+              className="mx-auto hidden max-w-[232px] md:block md:max-w-xs"
             >
               <div className="aspect-[9/19] w-full">
                 <img
@@ -458,7 +458,7 @@ export default function FeaturesContainer() {
                 delay: 0.5,
               }}
               viewport={{ once: true, amount: 0.8 }}
-              className="mx-auto hidden max-w-xs md:block"
+              className="mx-auto hidden max-w-[232px] md:block md:max-w-xs"
             >
               <div className="mx-auto aspect-[9/19] w-full md:w-[75%] lg:w-full">
                 <img
@@ -481,7 +481,7 @@ export default function FeaturesContainer() {
                 delay: 0.75,
               }}
               viewport={{ once: true, amount: 0.8 }}
-              className="mx-auto max-w-xs"
+              className="mx-auto max-w-[232px] md:max-w-xs"
             >
               <div className="mx-auto aspect-[9/19] w-full md:w-[75%] lg:w-full">
                 <img
@@ -587,7 +587,7 @@ export default function FeaturesContainer() {
                 delay: 0.5,
               }}
               viewport={{ once: true, amount: 0.8 }}
-              className="mx-auto max-w-xs"
+              className="mx-auto max-w-[232px] md:max-w-xs"
             >
               <div className="aspect-[9/19] w-full">
                 <img
