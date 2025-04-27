@@ -1,5 +1,5 @@
-import gianImage from "/about/gian.jpg";
-import matiImage from "/about/mati.jpg";
+import gianImage from "/about/gian.webp";
+import matiImage from "/about/mati.webp";
 import { motion } from "motion/react";
 
 export default function AboutSection() {
