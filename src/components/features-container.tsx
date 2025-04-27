@@ -19,10 +19,9 @@ import { useDotButton } from "../hooks/use-dots";
 import useEmblaCarousel from "embla-carousel-react";
 
 export default function FeaturesContainer() {
-  const [emblaRef, emblaApi] = useEmblaCarousel(
-    { loop: true, watchDrag: false },
-    [Autoplay({ delay: 4000 })],
-  );
+  const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true }, [
+    Autoplay({ delay: 5000, playOnInit: false }),
+  ]);
 
   const autoplayRef = useRef(emblaApi?.plugins().autoplay);
   const emblaRefTyped = emblaRef as unknown as React.RefObject<HTMLDivElement>;
@@ -68,7 +67,7 @@ export default function FeaturesContainer() {
       ref={emblaRef}
     >
       <div className="embla__container flex">
-        <div className="embla__slide flex min-h-dvh min-w-0 flex-[0_0_100%] flex-col items-center justify-evenly gap-0 p-12 lg:gap-12 xl:flex-row">
+        <div className="embla__slide flex min-h-dvh min-w-0 flex-[0_0_100%] cursor-grab flex-col items-center justify-evenly gap-0 p-12 select-none active:cursor-grabbing lg:gap-12 xl:flex-row">
           <div className="flex flex-col gap-2">
             <motion.h2
               initial={{
@@ -199,7 +198,7 @@ export default function FeaturesContainer() {
             </motion.div>
           </div>
         </div>
-        <div className="embla__slide flex min-h-dvh min-w-0 flex-[0_0_100%] flex-col items-center justify-evenly gap-0 p-12 lg:flex-row lg:gap-12">
+        <div className="embla__slide flex min-h-dvh min-w-0 flex-[0_0_100%] cursor-grab flex-col items-center justify-evenly gap-0 p-12 select-none active:cursor-grabbing lg:flex-row lg:gap-12">
           <div className="flex flex-col gap-2">
             <motion.h4
               initial={{
@@ -291,7 +290,7 @@ export default function FeaturesContainer() {
             </motion.div>
           </div>
         </div>
-        <div className="embla__slide flex min-h-dvh min-w-0 flex-[0_0_100%] flex-col items-center justify-evenly gap-0 p-12 lg:gap-12 xl:flex-row">
+        <div className="embla__slide flex min-h-dvh min-w-0 flex-[0_0_100%] cursor-grab flex-col items-center justify-evenly gap-0 p-12 select-none active:cursor-grabbing lg:gap-12 xl:flex-row">
           <div className="flex flex-col gap-2">
             <motion.h4
               initial={{
@@ -404,7 +403,7 @@ export default function FeaturesContainer() {
             </motion.div>
           </div>
         </div>
-        <div className="embla__slide flex min-h-dvh min-w-0 flex-[0_0_100%] flex-col items-center justify-evenly gap-0 p-12 lg:flex-row lg:gap-12">
+        <div className="embla__slide flex min-h-dvh min-w-0 flex-[0_0_100%] cursor-grab flex-col items-center justify-evenly gap-0 p-12 select-none active:cursor-grabbing lg:flex-row lg:gap-12">
           <div className="flex flex-col gap-2">
             <motion.h4
               initial={{
@@ -494,7 +493,7 @@ export default function FeaturesContainer() {
             </motion.div>
           </div>
         </div>
-        <div className="embla__slide flex min-h-dvh min-w-0 flex-[0_0_100%] flex-col items-center justify-evenly gap-0 p-12 md:flex-row md:gap-12">
+        <div className="embla__slide flex min-h-dvh min-w-0 flex-[0_0_100%] cursor-grab flex-col items-center justify-evenly gap-0 p-12 select-none active:cursor-grabbing md:flex-row md:gap-12">
           <div className="flex flex-col gap-2">
             <motion.h4
               initial={{
