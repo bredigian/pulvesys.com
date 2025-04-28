@@ -19,7 +19,7 @@ export default function SuscribeNow() {
               ease: "easeOut",
               delay: 0.25 + (index + 1) * 0.1,
             }}
-            viewport={{ once: true, amount: 0.8 }}
+            viewport={{ once: true, amount: 0.5 }}
             key={word}
           >
             {word}
@@ -37,7 +37,7 @@ export default function SuscribeNow() {
             ease: "easeOut",
             delay: 0.5 + ANIMATED_TEXT.split(" ").length * 0.1,
           }}
-          viewport={{ once: true, amount: 0.8 }}
+          viewport={{ once: true, amount: 0.5 }}
           href="https://myaccount.pulvesys.com"
           target="_blank"
           className="font-semibold underline"

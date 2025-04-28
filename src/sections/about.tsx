@@ -21,7 +21,7 @@ export default function AboutSection() {
             ease: "easeOut",
             delay: 0.25,
           }}
-          viewport={{ once: true, amount: 0.8 }}
+          viewport={{ once: true, amount: 0.5 }}
           className="text-4xl font-bold md:text-5xl xl:text-6xl"
         >
           ¿Quiénes somos?
@@ -38,7 +38,7 @@ export default function AboutSection() {
             ease: "easeOut",
             delay: 0.5,
           }}
-          viewport={{ once: true, amount: 0.8 }}
+          viewport={{ once: true, amount: 0.5 }}
           className="max-w-2xl text-center text-lg font-extralight md:text-xl lg:text-2xl 2xl:text-start"
         >
           Detrás de esto, nos encontramos:{" "}
@@ -61,7 +61,7 @@ export default function AboutSection() {
           ease: "easeOut",
           delay: 0.75,
         }}
-        viewport={{ once: true, amount: 0.8 }}
+        viewport={{ once: true, amount: 0.5 }}
         className="flex flex-wrap items-center justify-center gap-8 md:gap-24"
       >
         <div className="flex flex-col items-center gap-2">

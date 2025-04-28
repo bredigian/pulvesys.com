@@ -9,6 +9,7 @@ import ArrowIcon from "../components/icons/arrow-icon";
 import DocumentIcon from "../components/icons/document-icon";
 import { Link } from "react-scroll";
 import PhoneIcon from "../components/icons/phone-icon";
+import heroMask from "/hero-mask.jpg";
 import logo from "/logo.webp";
 import { motion } from "motion/react";
 
@@ -20,8 +21,28 @@ export default function HomeSection() {
   return (
     <section
       id="#"
-      className="flex min-h-[70dvh] flex-col items-center px-4 md:min-h-dvh md:px-0"
+      className="relative flex min-h-[70dvh] flex-col items-center overflow-y-hidden px-4 md:min-h-dvh md:px-0"
     >
+      <motion.div
+        initial={{
+          opacity: 0,
+          y: 200,
+          filter: "grayscale(100%)",
+        }}
+        whileInView={{
+          opacity: 0.025,
+          y: 100,
+          filter: "grayscale(100%)",
+        }}
+        transition={{
+          duration: 1.75,
+          ease: "easeInOut",
+        }}
+        viewport={{ once: true }}
+        className="absolute"
+      >
+        <img src={heroMask} className="" loading="eager" />
+      </motion.div>
       <div className="mt-16 flex w-full grow flex-col items-center justify-center gap-4 md:mt-0">
         <motion.img
           initial={{
@@ -34,9 +55,9 @@ export default function HomeSection() {
             ease: "easeOut",
             delay: 0.25,
           }}
-          viewport={{ once: true, amount: 0.8 }}
+          viewport={{ once: true, amount: 0.5 }}
           src={logo}
-          className="size-16 rounded-md"
+          className="z-[999] size-16 rounded-md"
         />
         <h1 className="hidden">{TITLE}</h1>
         <h1 className="flex max-w-xl flex-wrap items-center justify-center gap-2">
@@ -55,7 +76,7 @@ export default function HomeSection() {
                   ease: "easeOut",
                   delay: 0.25 + (index + 1) * 0.1,
                 }}
-                viewport={{ once: true, amount: 0.8 }}
+                viewport={{ once: true, amount: 0.5 }}
                 className="text-center text-4xl leading-[1] font-thin last:font-bold md:text-5xl lg:text-6xl"
               >
                 {word}
@@ -81,7 +102,7 @@ export default function HomeSection() {
                   ease: "easeOut",
                   delay: 0.25 + (index + 1) * 0.1,
                 }}
-                viewport={{ once: true, amount: 0.8 }}
+                viewport={{ once: true, amount: 0.5 }}
                 className="text-center text-sm leading-[1] font-medium md:text-base lg:text-lg"
               >
                 {word}
@@ -104,7 +125,7 @@ export default function HomeSection() {
               delay: 1,
             }}
           >
-            <button className="mt-12 flex w-2xs cursor-pointer items-center justify-center gap-2 rounded-md bg-gray-300 p-2 text-sm font-medium text-black opacity-50 hover:opacity-100 lg:text-base">
+            <button className="mt-12 flex w-2xs cursor-pointer items-center justify-center gap-2 rounded-md bg-gray-300 p-2 text-sm font-medium text-black opacity-50 duration-500 hover:opacity-100 lg:text-base">
               Explorar
               <ArrowIcon size={24} to="DOWN" />
             </button>

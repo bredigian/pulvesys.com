@@ -25,7 +25,7 @@ export default function PlansSection() {
           ease: "easeOut",
           delay: 0.25,
         }}
-        viewport={{ once: true, amount: 0.8 }}
+        viewport={{ once: true, amount: 0.5 }}
         className="text-4xl font-bold md:text-5xl lg:text-6xl"
       >
         Planes
@@ -42,7 +42,7 @@ export default function PlansSection() {
           ease: "easeOut",
           delay: 0.5,
         }}
-        viewport={{ once: true, amount: 0.8 }}
+        viewport={{ once: true, amount: 0.5 }}
         className="text-center text-lg font-extralight md:text-xl lg:text-2xl"
       >
         Contamos con 2 planes de suscripción.
@@ -64,7 +64,7 @@ export default function PlansSection() {
             ease: "easeOut",
             delay: 0.75,
           }}
-          viewport={{ once: true, amount: 0.8 }}
+          viewport={{ once: true, amount: 0.5 }}
           className="flex min-h-fit max-w-[420px] flex-col items-center gap-4 rounded-lg border-2 border-white/10 bg-black/50 px-3 py-6 md:min-h-[26rem] lg:min-h-[30rem]"
         >
           <span className="text-xl font-medium lg:text-2xl">
@@ -106,7 +106,7 @@ export default function PlansSection() {
             ease: "easeOut",
             delay: 1,
           }}
-          viewport={{ once: true, amount: 0.8 }}
+          viewport={{ once: true, amount: 0.5 }}
           className="flex min-h-fit max-w-[420px] flex-col items-center gap-4 rounded-lg border-2 border-white/10 bg-black/50 px-3 py-6 md:min-h-[26rem] lg:min-h-[30rem]"
         >
           <span className="text-xl font-medium lg:text-2xl">Plan Empresa</span>
@@ -148,7 +148,7 @@ export default function PlansSection() {
             ease: "easeOut",
             delay: 1.25,
           }}
-          viewport={{ once: true, amount: 0.8 }}
+          viewport={{ once: true, amount: 0.5 }}
           className="text-3xl font-thin lg:text-4xl"
         >
           ¿Te interesa alguno?
@@ -165,7 +165,7 @@ export default function PlansSection() {
             ease: "easeOut",
             delay: 1.5,
           }}
-          viewport={{ once: true, amount: 0.8 }}
+          viewport={{ once: true, amount: 0.5 }}
           className="hidden md:block"
         >
           <ArrowLargeIcon size={48} to="RIGHT" />
@@ -182,11 +182,11 @@ export default function PlansSection() {
             ease: "easeOut",
             delay: 1.5,
           }}
-          viewport={{ once: true, amount: 0.8 }}
+          viewport={{ once: true, amount: 0.5 }}
           href="https://myaccount.pulvesys.com"
           target="_blank"
         >
-          <button className="flex w-2xs cursor-pointer items-center justify-center gap-2 rounded-md bg-gray-300 p-2 text-sm font-medium text-black hover:bg-gray-200 active:bg-gray-400 md:text-base">
+          <button className="flex w-2xs cursor-pointer items-center justify-center gap-2 rounded-md bg-gray-300 p-2 text-sm font-medium text-black duration-500 hover:bg-gray-200 active:bg-gray-400 md:text-base">
             Registrate
           </button>
         </motion.a>

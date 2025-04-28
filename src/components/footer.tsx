@@ -1,5 +1,6 @@
 import { Link } from "react-scroll";
 import { ROUTES } from "../const/routes";
+import SigninIcon from "./icons/signin.icon";
 import logo from "/logo.webp";
 
 export default function Footer() {
@@ -15,7 +16,7 @@ export default function Footer() {
           {ROUTES.map((route) => (
             <li
               key={`${route.href}_footer`}
-              className="opacity-50 hover:opacity-100"
+              className="opacity-50 duration-500 hover:opacity-100"
             >
               <Link
                 smooth
@@ -27,6 +28,19 @@ export default function Footer() {
               </Link>
             </li>
           ))}
+          <a
+            className="hidden md:block"
+            href="https://myaccount.pulvesys.com"
+            target="_blank"
+          >
+            <button
+              type="button"
+              className="flex cursor-pointer items-center gap-1 rounded-md bg-gray-300 px-2 py-1 text-sm text-black opacity-50 duration-500 hover:opacity-100"
+            >
+              Ingresar
+              <SigninIcon size={16} />
+            </button>
+          </a>
         </ul>
       </div>
     </footer>

@@ -81,7 +81,7 @@ export default function FeaturesContainer() {
                 ease: "easeOut",
                 delay: 0.25,
               }}
-              viewport={{ once: true, amount: 0.8 }}
+              viewport={{ once: true, amount: 0.5 }}
               className="mb-6 hidden w-fit text-3xl font-thin md:block md:text-4xl xl:mb-8 xl:text-5xl 2xl:mb-12"
             >
               ¿Que se puede hacer?
@@ -98,7 +98,7 @@ export default function FeaturesContainer() {
                 ease: "easeOut",
                 delay: 0.5,
               }}
-              viewport={{ once: true, amount: 0.8 }}
+              viewport={{ once: true, amount: 0.5 }}
               className="text-4xl font-bold md:text-5xl lg:text-6xl"
             >
               Pulverizaciones
@@ -115,7 +115,7 @@ export default function FeaturesContainer() {
                 ease: "easeOut",
                 delay: 0.75,
               }}
-              viewport={{ once: true, amount: 0.8 }}
+              viewport={{ once: true, amount: 0.5 }}
               className="max-w-lg text-base font-extralight md:text-lg lg:text-xl"
             >
               Creá tus órdenes indicando{" "}
@@ -139,7 +139,7 @@ export default function FeaturesContainer() {
                 ease: "easeOut",
                 delay: 0.5,
               }}
-              viewport={{ once: true, amount: 0.8 }}
+              viewport={{ once: true, amount: 0.5 }}
               className="mx-auto max-w-[232px] md:max-w-xs"
             >
               <div className="aspect-[9/19] w-full">
@@ -162,7 +162,7 @@ export default function FeaturesContainer() {
                 ease: "easeOut",
                 delay: 0.75,
               }}
-              viewport={{ once: true, amount: 0.8 }}
+              viewport={{ once: true, amount: 0.5 }}
               className="mx-auto hidden max-w-[232px] md:block md:max-w-xs"
             >
               <div className="aspect-[9/19] w-full">
@@ -185,7 +185,7 @@ export default function FeaturesContainer() {
                 ease: "easeOut",
                 delay: 1,
               }}
-              viewport={{ once: true, amount: 0.8 }}
+              viewport={{ once: true, amount: 0.5 }}
               className="mx-auto hidden max-w-[232px] md:block md:max-w-xs"
             >
               <div className="aspect-[9/19] w-full">
@@ -212,7 +212,7 @@ export default function FeaturesContainer() {
                 ease: "easeOut",
                 delay: 0.25,
               }}
-              viewport={{ once: true, amount: 0.8 }}
+              viewport={{ once: true, amount: 0.5 }}
               className="text-4xl font-bold md:text-5xl lg:text-6xl"
             >
               Productos
@@ -229,7 +229,7 @@ export default function FeaturesContainer() {
                 ease: "easeOut",
                 delay: 0.5,
               }}
-              viewport={{ once: true, amount: 0.8 }}
+              viewport={{ once: true, amount: 0.5 }}
               className="max-w-lg text-base font-extralight md:text-lg lg:text-xl"
             >
               <strong className="font-bold">Agregá</strong>,{" "}
@@ -254,7 +254,7 @@ export default function FeaturesContainer() {
                 ease: "easeOut",
                 delay: 0.5,
               }}
-              viewport={{ once: true, amount: 0.8 }}
+              viewport={{ once: true, amount: 0.5 }}
               className="mx-auto hidden max-w-[232px] md:block md:max-w-xs"
             >
               <div className="mx-auto aspect-[9/19] w-full md:w-[75%] lg:w-full">
@@ -277,7 +277,7 @@ export default function FeaturesContainer() {
                 ease: "easeOut",
                 delay: 0.75,
               }}
-              viewport={{ once: true, amount: 0.8 }}
+              viewport={{ once: true, amount: 0.5 }}
               className="mx-auto max-w-[232px] md:max-w-xs"
             >
               <div className="mx-auto aspect-[9/19] w-full md:w-[75%] lg:w-full">
@@ -304,7 +304,7 @@ export default function FeaturesContainer() {
                 ease: "easeOut",
                 delay: 0.25,
               }}
-              viewport={{ once: true, amount: 0.8 }}
+              viewport={{ once: true, amount: 0.5 }}
               className="text-4xl font-bold md:text-5xl lg:text-6xl"
             >
               Cultivos
@@ -322,7 +322,7 @@ export default function FeaturesContainer() {
                 ease: "easeOut",
                 delay: 0.5,
               }}
-              viewport={{ once: true, amount: 0.8 }}
+              viewport={{ once: true, amount: 0.5 }}
               className="max-w-lg text-base font-extralight md:text-lg lg:text-xl"
             >
               Administrá los diferentes tipos de{" "}
@@ -344,7 +344,7 @@ export default function FeaturesContainer() {
                 ease: "easeOut",
                 delay: 0.5,
               }}
-              viewport={{ once: true, amount: 0.8 }}
+              viewport={{ once: true, amount: 0.5 }}
               className="mx-auto max-w-[232px] md:max-w-xs"
             >
               <div className="aspect-[9/19] w-full">
@@ -367,7 +367,7 @@ export default function FeaturesContainer() {
                 ease: "easeOut",
                 delay: 0.75,
               }}
-              viewport={{ once: true, amount: 0.8 }}
+              viewport={{ once: true, amount: 0.5 }}
               className="mx-auto hidden max-w-[232px] md:block md:max-w-xs"
             >
               <div className="aspect-[9/19] w-full">
@@ -390,7 +390,7 @@ export default function FeaturesContainer() {
                 ease: "easeOut",
                 delay: 1,
               }}
-              viewport={{ once: true, amount: 0.8 }}
+              viewport={{ once: true, amount: 0.5 }}
               className="mx-auto hidden max-w-[232px] md:block md:max-w-xs"
             >
               <div className="aspect-[9/19] w-full">
@@ -417,7 +417,7 @@ export default function FeaturesContainer() {
                 ease: "easeOut",
                 delay: 0.25,
               }}
-              viewport={{ once: true, amount: 0.8 }}
+              viewport={{ once: true, amount: 0.5 }}
               className="text-4xl font-bold md:text-5xl lg:text-6xl"
             >
               Ubicaciones
@@ -434,7 +434,7 @@ export default function FeaturesContainer() {
                 ease: "easeOut",
                 delay: 0.5,
               }}
-              viewport={{ once: true, amount: 0.8 }}
+              viewport={{ once: true, amount: 0.5 }}
               className="max-w-lg text-base font-extralight md:text-lg lg:text-xl"
             >
               Identificá los distintos{" "}
@@ -457,7 +457,7 @@ export default function FeaturesContainer() {
                 ease: "easeOut",
                 delay: 0.5,
               }}
-              viewport={{ once: true, amount: 0.8 }}
+              viewport={{ once: true, amount: 0.5 }}
               className="mx-auto hidden max-w-[232px] md:block md:max-w-xs"
             >
               <div className="mx-auto aspect-[9/19] w-full md:w-[75%] lg:w-full">
@@ -480,7 +480,7 @@ export default function FeaturesContainer() {
                 ease: "easeOut",
                 delay: 0.75,
               }}
-              viewport={{ once: true, amount: 0.8 }}
+              viewport={{ once: true, amount: 0.5 }}
               className="mx-auto max-w-[232px] md:max-w-xs"
             >
               <div className="mx-auto aspect-[9/19] w-full md:w-[75%] lg:w-full">
@@ -507,7 +507,7 @@ export default function FeaturesContainer() {
                 ease: "easeOut",
                 delay: 0.25,
               }}
-              viewport={{ once: true, amount: 0.8 }}
+              viewport={{ once: true, amount: 0.5 }}
               className="text-4xl font-bold md:text-5xl lg:text-6xl"
             >
               Historial
@@ -524,7 +524,7 @@ export default function FeaturesContainer() {
                 ease: "easeOut",
                 delay: 0.5,
               }}
-              viewport={{ once: true, amount: 0.8 }}
+              viewport={{ once: true, amount: 0.5 }}
               className="max-w-lg text-base font-extralight md:text-lg lg:text-xl"
             >
               Llevá un <strong className="font-bold">registro</strong> con todos
@@ -543,7 +543,7 @@ export default function FeaturesContainer() {
                 ease: "easeOut",
                 delay: 0.75,
               }}
-              viewport={{ once: true, amount: 0.8 }}
+              viewport={{ once: true, amount: 0.5 }}
               className="mt-12 hidden w-fit font-thin md:block md:text-4xl lg:text-5xl"
             >
               ¿Querés probar todas
@@ -562,7 +562,7 @@ export default function FeaturesContainer() {
                 ease: "easeOut",
                 delay: 1,
               }}
-              viewport={{ once: true, amount: 0.8 }}
+              viewport={{ once: true, amount: 0.5 }}
               href="https://myaccount.pulvesys.com"
               target="_blank"
               className="hidden md:block"
@@ -586,7 +586,7 @@ export default function FeaturesContainer() {
                 ease: "easeOut",
                 delay: 0.5,
               }}
-              viewport={{ once: true, amount: 0.8 }}
+              viewport={{ once: true, amount: 0.5 }}
               className="mx-auto max-w-[232px] md:max-w-xs"
             >
               <div className="aspect-[9/19] w-full">
