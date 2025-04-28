@@ -28,11 +28,7 @@ export default function Footer() {
               </Link>
             </li>
           ))}
-          <a
-            className="hidden md:block"
-            href="https://myaccount.pulvesys.com"
-            target="_blank"
-          >
+          <a href="https://myaccount.pulvesys.com" target="_blank">
             <button
               type="button"
               className="flex cursor-pointer items-center gap-1 rounded-md bg-gray-300 px-2 py-1 text-sm text-black opacity-50 duration-500 hover:opacity-100"
