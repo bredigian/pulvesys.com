@@ -8,7 +8,7 @@ export default function Navbar() {
   const isMobile = useIsMobile();
 
   return (
-    <header className="fixed top-0 z-[9999] my-4 flex items-center justify-center self-center rounded-lg bg-neutral-950/10 p-4 backdrop-blur-sm md:gap-44 lg:gap-96">
+    <header className="fixed top-0 z-[9999] my-4 flex items-center justify-center self-center rounded-lg bg-neutral-950/10 p-2 backdrop-blur-sm md:gap-44 lg:gap-96">
       <img src={logo} className="hidden size-12 rounded-md md:block" />
       <nav id="navbar" className="flex items-center gap-12">
         <ul className="flex items-center gap-4 text-sm font-normal">
