@@ -6,7 +6,7 @@ export default function AboutSection() {
   return (
     <section
       id="#about"
-      className="flex min-h-dvh flex-col items-center justify-center gap-12 px-4 lg:flex-row lg:justify-around 2xl:gap-0 2xl:px-0"
+      className="flex min-h-dvh flex-col items-center justify-center gap-12 p-8 lg:flex-row lg:justify-around 2xl:gap-0"
     >
       <div className="flex flex-col items-center gap-4 2xl:items-start">
         <motion.h4
@@ -22,7 +22,7 @@ export default function AboutSection() {
             delay: 0.25,
           }}
           viewport={{ once: true, amount: 0.5 }}
-          className="text-4xl font-bold md:text-5xl xl:text-6xl"
+          className="text-center text-4xl font-bold md:text-5xl xl:text-6xl"
         >
           ¿Quiénes somos?
         </motion.h4>

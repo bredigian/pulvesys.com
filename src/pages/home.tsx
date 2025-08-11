@@ -1,5 +1,5 @@
 import AboutSection from "../sections/about";
-import FeaturesContainer from "../components/features-container";
+import Features from "../sections/features";
 import Footer from "../components/footer";
 import HomeSection from "../sections/home";
 import Navbar from "../components/navbar";
@@ -11,7 +11,7 @@ export default function Home() {
     <main className="relative flex flex-col">
       <Navbar />
       <HomeSection />
-      <FeaturesContainer />
+      <Features />
       <PlansSection />
       <AboutSection />
       <SuscribeNow />

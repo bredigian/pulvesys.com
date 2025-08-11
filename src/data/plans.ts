@@ -9,7 +9,7 @@ export const INDIVIDUAL_PLAN_FEATURES = [
 export const ENTERPRISE_PLAN_FEATURES = [
   "Funcionalidades básicas del Plan INDIVIDUAL.",
   "Historial completo con los cambios/acciones registradas en el sistema.",
-  "Administración de usuarios como Empleados.",
+  "Creación y administración de usuarios como Empleados.",
   "Visualización de reportes gráficos en base a las estadísticas de tu empresa. (Proximamente)",
   "Sistema de notificaciones entre usuarios de tu empresa. (Proximamente)",
 ];

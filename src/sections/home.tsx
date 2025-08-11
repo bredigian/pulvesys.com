@@ -21,7 +21,7 @@ export default function HomeSection() {
   return (
     <section
       id="#"
-      className="relative flex min-h-[70dvh] flex-col items-center overflow-y-hidden px-4 md:min-h-dvh md:px-0"
+      className="relative flex min-h-dvh flex-col items-center overflow-y-hidden p-8"
     >
       <motion.div
         initial={{
@@ -41,7 +41,13 @@ export default function HomeSection() {
         viewport={{ once: true }}
         className="absolute"
       >
-        <img src={heroMask} className="" loading="eager" />
+        <img
+          id="logo-for-seo"
+          alt="Logo de PulveSys"
+          src={logo}
+          className="hidden size-16 rounded-md"
+        />
+        <img src={heroMask} alt="Hero background image" loading="eager" />
       </motion.div>
       <div className="mt-16 flex w-full grow flex-col items-center justify-center gap-4 md:mt-0">
         <motion.img
@@ -81,7 +87,6 @@ export default function HomeSection() {
               >
                 {word}
               </motion.span>
-              // delay: 0.25 + (index + 1) * 0.1,
             );
           })}
         </h1>
@@ -110,7 +115,7 @@ export default function HomeSection() {
             );
           })}
         </h2>
-        <Link smooth duration={500} to="#features">
+        <Link smooth duration={500} offset={-60} to="#features">
           <motion.div
             animate={{ opacity: 100, y: 0, filter: "blur(0px)" }}
             initial={{

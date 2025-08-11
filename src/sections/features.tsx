@@ -2,7 +2,7 @@ import { useCallback, useEffect, useRef } from "react";
 
 import Autoplay from "embla-carousel-autoplay";
 import { EmblaCarouselType } from "embla-carousel";
-import SignupIcon from "./icons/signup-icon";
+import SignupIcon from "../components/icons/signup-icon";
 import camposScreen1 from "/screens/campos-screen_1.webp";
 import camposScreen2 from "/screens/campos-screen_2.webp";
 import cultivosScreen1 from "/screens/cultivos-screen_1.webp";
@@ -18,7 +18,7 @@ import tratamientosScreen2 from "/screens/tratamientos-screen_2.webp";
 import { useDotButton } from "../hooks/use-dots";
 import useEmblaCarousel from "embla-carousel-react";
 
-export default function FeaturesContainer() {
+export default function Features() {
   const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true }, [
     Autoplay({ delay: 5000, playOnInit: false }),
   ]);
@@ -63,12 +63,12 @@ export default function FeaturesContainer() {
   return (
     <section
       id="#features"
-      className="embla relative flex flex-col overflow-hidden"
+      className="embla relative flex min-h-dvh flex-col justify-start gap-4 overflow-hidden p-8 2xl:justify-center"
       ref={emblaRef}
     >
       <div className="embla__container flex">
-        <div className="embla__slide flex min-h-dvh min-w-0 flex-[0_0_100%] cursor-grab flex-col items-center justify-evenly gap-0 p-12 select-none active:cursor-grabbing lg:gap-12 xl:flex-row">
-          <div className="flex flex-col gap-2">
+        <div className="embla__slide flex min-w-0 flex-[0_0_100%] cursor-grab flex-col items-center justify-start gap-6 px-12 text-center select-none active:cursor-grabbing lg:gap-12 xl:flex-row xl:justify-evenly xl:text-start">
+          <div className="flex flex-col items-center gap-2 xl:items-start">
             <motion.h2
               initial={{
                 opacity: 0,
@@ -140,7 +140,7 @@ export default function FeaturesContainer() {
                 delay: 0.5,
               }}
               viewport={{ once: true, amount: 0.5 }}
-              className="mx-auto max-w-[232px] md:max-w-xs"
+              className="mx-auto max-w-[232px] md:max-w-[280px]"
             >
               <div className="aspect-[9/19] w-full">
                 <img
@@ -163,7 +163,7 @@ export default function FeaturesContainer() {
                 delay: 0.75,
               }}
               viewport={{ once: true, amount: 0.5 }}
-              className="mx-auto hidden max-w-[232px] md:block md:max-w-xs"
+              className="mx-auto hidden max-w-[232px] md:block md:max-w-[280px]"
             >
               <div className="aspect-[9/19] w-full">
                 <img
@@ -186,7 +186,7 @@ export default function FeaturesContainer() {
                 delay: 1,
               }}
               viewport={{ once: true, amount: 0.5 }}
-              className="mx-auto hidden max-w-[232px] md:block md:max-w-xs"
+              className="mx-auto hidden max-w-[232px] md:block md:max-w-[280px]"
             >
               <div className="aspect-[9/19] w-full">
                 <img
@@ -198,7 +198,7 @@ export default function FeaturesContainer() {
             </motion.div>
           </div>
         </div>
-        <div className="embla__slide flex min-h-dvh min-w-0 flex-[0_0_100%] cursor-grab flex-col items-center justify-evenly gap-0 p-12 select-none active:cursor-grabbing lg:flex-row lg:gap-12">
+        <div className="embla__slide flex min-w-0 flex-[0_0_100%] cursor-grab flex-col items-center justify-start gap-6 px-12 text-center select-none active:cursor-grabbing lg:flex-row lg:gap-12 xl:justify-evenly xl:text-start">
           <div className="flex flex-col gap-2">
             <motion.h4
               initial={{
@@ -255,7 +255,7 @@ export default function FeaturesContainer() {
                 delay: 0.5,
               }}
               viewport={{ once: true, amount: 0.5 }}
-              className="mx-auto hidden max-w-[232px] md:block md:max-w-xs"
+              className="mx-auto hidden max-w-[232px] md:block md:max-w-[260px]"
             >
               <div className="mx-auto aspect-[9/19] w-full md:w-[75%] lg:w-full">
                 <img
@@ -278,7 +278,7 @@ export default function FeaturesContainer() {
                 delay: 0.75,
               }}
               viewport={{ once: true, amount: 0.5 }}
-              className="mx-auto max-w-[232px] md:max-w-xs"
+              className="mx-auto max-w-[232px] md:max-w-[260px]"
             >
               <div className="mx-auto aspect-[9/19] w-full md:w-[75%] lg:w-full">
                 <img
@@ -290,7 +290,7 @@ export default function FeaturesContainer() {
             </motion.div>
           </div>
         </div>
-        <div className="embla__slide flex min-h-dvh min-w-0 flex-[0_0_100%] cursor-grab flex-col items-center justify-evenly gap-0 p-12 select-none active:cursor-grabbing lg:gap-12 xl:flex-row">
+        <div className="embla__slide flex min-w-0 flex-[0_0_100%] cursor-grab flex-col items-center justify-start gap-6 px-12 text-center select-none active:cursor-grabbing lg:gap-12 xl:flex-row xl:justify-evenly xl:text-start">
           <div className="flex flex-col gap-2">
             <motion.h4
               initial={{
@@ -345,7 +345,7 @@ export default function FeaturesContainer() {
                 delay: 0.5,
               }}
               viewport={{ once: true, amount: 0.5 }}
-              className="mx-auto max-w-[232px] md:max-w-xs"
+              className="mx-auto max-w-[232px] md:max-w-[280px]"
             >
               <div className="aspect-[9/19] w-full">
                 <img
@@ -368,7 +368,7 @@ export default function FeaturesContainer() {
                 delay: 0.75,
               }}
               viewport={{ once: true, amount: 0.5 }}
-              className="mx-auto hidden max-w-[232px] md:block md:max-w-xs"
+              className="mx-auto hidden max-w-[232px] md:block md:max-w-[280px]"
             >
               <div className="aspect-[9/19] w-full">
                 <img
@@ -391,7 +391,7 @@ export default function FeaturesContainer() {
                 delay: 1,
               }}
               viewport={{ once: true, amount: 0.5 }}
-              className="mx-auto hidden max-w-[232px] md:block md:max-w-xs"
+              className="mx-auto hidden max-w-[232px] md:block md:max-w-[280px]"
             >
               <div className="aspect-[9/19] w-full">
                 <img
@@ -403,7 +403,7 @@ export default function FeaturesContainer() {
             </motion.div>
           </div>
         </div>
-        <div className="embla__slide flex min-h-dvh min-w-0 flex-[0_0_100%] cursor-grab flex-col items-center justify-evenly gap-0 p-12 select-none active:cursor-grabbing lg:flex-row lg:gap-12">
+        <div className="embla__slide flex min-w-0 flex-[0_0_100%] cursor-grab flex-col items-center justify-start gap-6 px-12 text-center select-none active:cursor-grabbing lg:flex-row lg:gap-12 xl:justify-evenly xl:text-start">
           <div className="flex flex-col gap-2">
             <motion.h4
               initial={{
@@ -458,7 +458,7 @@ export default function FeaturesContainer() {
                 delay: 0.5,
               }}
               viewport={{ once: true, amount: 0.5 }}
-              className="mx-auto hidden max-w-[232px] md:block md:max-w-xs"
+              className="mx-auto hidden max-w-[232px] md:block md:max-w-[260px]"
             >
               <div className="mx-auto aspect-[9/19] w-full md:w-[75%] lg:w-full">
                 <img
@@ -481,7 +481,7 @@ export default function FeaturesContainer() {
                 delay: 0.75,
               }}
               viewport={{ once: true, amount: 0.5 }}
-              className="mx-auto max-w-[232px] md:max-w-xs"
+              className="mx-auto max-w-[232px] md:max-w-[260px]"
             >
               <div className="mx-auto aspect-[9/19] w-full md:w-[75%] lg:w-full">
                 <img
@@ -493,7 +493,7 @@ export default function FeaturesContainer() {
             </motion.div>
           </div>
         </div>
-        <div className="embla__slide flex min-h-dvh min-w-0 flex-[0_0_100%] cursor-grab flex-col items-center justify-evenly gap-0 p-12 select-none active:cursor-grabbing md:flex-row md:gap-12">
+        <div className="embla__slide flex min-w-0 flex-[0_0_100%] cursor-grab flex-col items-center justify-start gap-6 px-12 text-center select-none active:cursor-grabbing md:flex-row md:gap-12 md:text-start xl:justify-evenly">
           <div className="flex flex-col gap-2">
             <motion.h4
               initial={{
@@ -587,7 +587,7 @@ export default function FeaturesContainer() {
                 delay: 0.5,
               }}
               viewport={{ once: true, amount: 0.5 }}
-              className="mx-auto max-w-[232px] md:max-w-xs"
+              className="mx-auto max-w-[232px] md:max-w-[260px]"
             >
               <div className="aspect-[9/19] w-full">
                 <img
@@ -600,8 +600,7 @@ export default function FeaturesContainer() {
           </div>
         </div>
       </div>
-
-      <div className="embla__controls absolute bottom-6 flex flex-row items-center gap-4 self-center">
+      <div className="embla__controls flex flex-row items-center justify-center gap-4 self-center">
         <div className="embla__dots flex flex-row items-center gap-2">
           {scrollSnaps.map((_, index) => {
             const isActive = index === selectedIndex;

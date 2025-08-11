@@ -5,13 +5,14 @@ import {
 
 import ArrowLargeIcon from "../components/icons/arrow-large-icon";
 import DotIcon from "../components/icons/dot-icon";
+import { cn } from "../lib/utils";
 import { motion } from "motion/react";
 
 export default function PlansSection() {
   return (
     <section
       id="#plans"
-      className="flex min-h-dvh flex-col items-center justify-center gap-12 px-4 md:px-0"
+      className="flex min-h-dvh flex-col items-center justify-center gap-12 p-8"
     >
       <motion.h4
         initial={{
@@ -124,10 +125,13 @@ export default function PlansSection() {
             {ENTERPRISE_PLAN_FEATURES.map((value) => (
               <li
                 key={`${value}_feature`}
-                className="flex items-start gap-1 opacity-75"
+                className={cn(
+                  "flex items-start gap-1 opacity-75",
+                  value.toLowerCase().includes("proximamente") && "opacity-50",
+                )}
               >
                 <DotIcon size={24} />
-                <p className="max-w-2xs pr-3 text-xs md:text-sm lg:text-base">
+                <p className={"max-w-2xs pr-3 text-xs md:text-sm lg:text-base"}>
                   {value}
                 </p>
               </li>
